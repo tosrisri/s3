@@ -1,0 +1,11 @@
+
+
+@mixin btn_space {
+    padding: 1.5em 2.5em;
+}
+
+.cbtn {
+    border-radius: 0;
+    border-color: red;
+    @include btn_space;
+}

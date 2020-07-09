@@ -1,0 +1,20 @@
+/* SCSS Variables*/
+$color-grey100: #080808;
+$color-grey80: #383838;
+$color-grey60: #888888;
+$color-grey40: #d8d8d8;
+$color-grey20: #f8f8f8;
+$color-grey00: #ffffff;
+
+$fw-thin: 100;
+$fw-medium: 200;
+$fw-thick: 400;
+$fw-dark: bold;
+
+
+.hr {
+    height: 1px;
+    border-top: 1px dotted $color-grey60;
+    margin: 2em auto;
+    width: 25%;
+}

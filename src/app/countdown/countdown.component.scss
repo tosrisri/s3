@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 100;
+    color: #353b48;
+}
+
+ul#CounterCont {
+    display: flex;
+    list-style-type: none;
+}
+
+ul#CounterCont li {
+    border: 1px solid #353b48;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1em;
+}
+
+ul#CounterCont li span {
+    padding-right: 8px;
+}
