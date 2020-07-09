@@ -13,7 +13,7 @@ import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
     <div class="modal-body">
       <ul class="sitemap-links">
         <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/about']" (click)="isMenuCollapsed = true"  title="About">About</a>
+          <a class="nav-link" [routerLink]="['/home']" (click)="isMenuCollapsed = true"  title="Home">Home</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
           <a class="nav-link" [routerLink]="['/experience']" (click)="isMenuCollapsed = true"  title="Experience">Experience</a>
@@ -25,7 +25,7 @@ import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
           <a class="nav-link" [routerLink]="['/services']" (click)="isMenuCollapsed = true"  title="Services">Services</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/blog']" (click)="isMenuCollapsed = true"  title="Blog">Blog</a>
+          <a class="nav-link" [routerLink]="['/tutorials']" (click)="isMenuCollapsed = true"  title="Tutorials">Tutorials</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
           <a class="nav-link" [routerLink]="['/contact']" (click)="isMenuCollapsed = true"  title="Contact">Contact</a>

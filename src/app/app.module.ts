@@ -8,6 +8,11 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CountdownComponent } from './countdown/countdown.component';
 
 import { SitemapComponent, NgbdModalContent } from './sitemap/sitemap.component';
+import { TutorialsComponent } from './tutorials/tutorials.component';
+import { ServicesComponent } from './services/services.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,7 @@ import { SitemapComponent, NgbdModalContent } from './sitemap/sitemap.component'
     CarouselComponent,
     CountdownComponent,
     SitemapComponent, 
-    NgbdModalContent
+    NgbdModalContent, TutorialsComponent, ServicesComponent, PortfolioComponent, ContactComponent, ExperienceComponent
   ],
   entryComponents: [NgbdModalContent],
   imports: [
