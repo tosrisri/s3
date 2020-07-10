@@ -58,7 +58,19 @@ div,
 p {
   outline: none;
 }
+a {
+  color: $color-grey60 !important;
+  text-decoration: none;
+}
+a:hover {
+  color: $color-grey100 !important;
+  text-decoration: none;
+}
 
+.small-text {
+  font-size: 11px;
+  color: $color-grey80;
+}
 .text-st {
   text-decoration: line-through;
 }
@@ -108,13 +120,9 @@ p {
     border: 0px dotted $color-grey20;
     flex: auto;
     a {
-      color: $color-grey60 !important;
       font-weight: $fw-thin;
       text-transform: uppercase;
       padding: 1em;
-    }
-    a:hover {
-      color: $color-grey100 !important;
     }
   }
 }
