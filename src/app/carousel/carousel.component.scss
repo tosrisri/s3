@@ -5,10 +5,6 @@
 .ngbcarousel {
   height: 95vh;
 }
-.ngbcarousel li, #ngb-slide-2 {
- background-color: $color-grey100;
- border: 1px red solid;
-}
 .picsum-img-wrapper {
   border: 0px solid red;
   background: no-repeat center center scroll;
@@ -17,25 +13,14 @@
 }
 
 .carousel-caption {
-  top: 15vh;
+  top: 10vh;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
-h2,
-h3,
-h4,
-h5 {
-  font-weight: $fw-thin;
-}
-.carousel-caption h1 {
-  font-size: 9em;
-}
-.carousel-caption h3 {
-  font-size: 2em;
-}
-.carousel-caption p.precise-text {
-  font-size: 4em;
-  font-weight: $fw-thin;
-  color: $color-grey60;
+h4 {
+  line-height: 1.5;
 }
 
 .ngbcarousel .btn {
@@ -45,8 +30,8 @@ h5 {
   text-transform: uppercase;
   border-radius: 0;
   letter-spacing: 0.1em;
-  color: $color-grey80;
-  border-color: $color-grey80;
+  color: $color-grey60;
+  border-color: $color-grey40;
 }
 .ngbcarousel .btn:hover {
   background-color: $color-grey100;

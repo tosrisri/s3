@@ -6,15 +6,35 @@ $color-grey40: #d8d8d8;
 $color-grey20: #f8f8f8;
 $color-grey00: #ffffff;
 
+// $fs-1: 199.60px;
+// $fs-2: 123.36px;
+// $fs-3: 76.24px;
+// $fs-4: 47.12px;
+// $fs-5: 29.124px;
+// $fs-6: 18px;
+
+// $fs-1: 17.9em;
+// $fs-2: 11em;
+// $fs-3: 6.8em;
+// $fs-4: 4.2em;
+// $fs-5: 2.6em;
+// $fs-6: 1em;
+
+$fs-1: 13em;
+$fs-2: 9em;
+$fs-3: 6em;
+$fs-4: 4em;
+$fs-5: 2em;
+$fs-6: 1em;
+
+// $fs-1: 9.98em;
+// $fs-2: 6.16em;
+// $fs-3: 3.81em;
+// $fs-4: 2.35em;
+// $fs-5: 1.45em;
+// $fs-6: 0.9em;
+
 $fw-thin: 100;
 $fw-medium: 200;
 $fw-thick: 400;
-$fw-dark: bold;
-
-
-.hr {
-    height: 1px;
-    border-top: 1px dotted $color-grey60;
-    margin: 2em auto;
-    width: 25%;
-}
+$fw-bold: bold;
