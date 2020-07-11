@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TutorialsComponent implements OnInit {
 
+  currentOrientation = 'horizontal';
+  currentJustify = 'center';
+
   constructor() { }
 
   ngOnInit() {

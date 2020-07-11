@@ -1,0 +1,114 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.plist-cont {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin: 3em 0 3em;
+  li {
+    padding: 0 1em;
+    text-transform: uppercase;
+    border-right: 1px dotted $color-grey40;
+  }
+  li:last-child {
+    border: none;
+  }
+}
+
+/* Tab Styles */
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: none;
+  border-bottom: 2px solid $color-grey80;
+}
+
+/* Tab Content */
+.post-title-wrap {
+    position: relative;
+    max-height: 280px;
+    }
+.post-title__img-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.post-title-wrap img {
+  margin: 0 auto;
+  display: block;
+}
+.post-title {
+  color: $color-grey00;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin: 0;
+padding: 0;
+font-size: 10em;
+font-weight: $fw-bold;
+opacity: 0.3;
+width: 100%;
+text-align: center;
+filter: blur(2px);
+width: 100%;
+text-align: center;
+}
+
+.section {
+  width: 100%;
+}
+.grid-cont {
+  border: 0px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 100%;
+}
+.grid-item {
+  flex: 1 50%;
+  padding: 4em;
+  min-height: 5em;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  display: flex;
+  text-decoration: none;
+  background-color: #ececec;
+}
+.grid-item:nth-child(3n + 1) {
+  flex: 1 100%;
+  background-color: #f2f2f2;
+}
+.grid-item:nth-child(3n) {
+  background-color: #dcdcdc;
+}
+.grid-item:nth-child(4n) {
+  background-color: #f0f0f0;
+}
+.grid-item:hover {
+  background-color: $color-grey00;
+}
+.grid-item h4 {
+  font-weight: $fw-bold;
+  color: $color-grey45;
+}
+.grid-item h5 {
+  font-weight: $fw-thin;
+  color: $color-grey50;
+}
+.grid-item:hover h4,
+.grid-item:hover h5 {
+  color: $color-grey60;
+}

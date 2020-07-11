@@ -1,66 +1,12 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
-.plist-cont {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: auto;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  margin: 3em 0 3em;
-  li {
-    padding: 0 1em;
-    text-transform: uppercase;
-    border-right: 1px dotted $color-grey40;
-  }
-  li:last-child {
-    border: none;
-  }
+/* Greyscale image and hover color 
+.logo-wrapper a {
+    filter:grayscale(1);
+    transition:all ease 0.6s;
 }
 
-.section {
-  width: 100%;
-}
-.grid-cont {
-  border: 0px solid red;
-  display: flex;
-  flex-flow: row wrap;
-  max-width: 100%;
-}
-.grid-item {
-  flex: 1 50%;
-  padding: 4em;
-  min-height: 5em;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-  flex-direction: column;
-  justify-content: center;
-  display: flex;
-  text-decoration: none;
-  background-color: #ececec;
-}
-.grid-item:nth-child(3n + 1) {
-  flex: 1 100%;
-  background-color: #f2f2f2;
-}
-.grid-item:nth-child(3n) {
-  background-color: #dcdcdc;
-}
-.grid-item:nth-child(4n) {
-  background-color: #f0f0f0;
-}
-.grid-item:hover {
-    background-color: $color-grey00;
-}
-.grid-item h4 {
-    font-weight: $fw-bold;
-    color: $color-grey40;
-}
-.grid-item h5 {
-    font-weight: $fw-thin;
-    color: $color-grey50;
-}
+.logo-wrapper a:hover {
+    filter:grayscale(0);
+}*/

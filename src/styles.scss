@@ -8,6 +8,7 @@ body {
   font-weight: $fw-thin;
   color: $color-grey80;
   line-height: 1.618em;
+  padding-top: 60px;
 }
 h1,
 .h1 {
@@ -46,11 +47,24 @@ h6,
   color: $color-grey60;
 }
 
+h5,
+h6 {
+  line-height: 1.6;
+}
+
 .hr {
   height: 1px;
   border-top: 1px dotted $color-grey60;
   margin: 2em auto 1em auto;
   width: 25%;
+}
+.hr-w100 {
+  height: 1px;
+  border-top: 1px dotted $color-grey40;
+  margin: 0 auto;
+}
+.bg-white {
+  background-color: $color-grey00;
 }
 a,
 .btn,
@@ -67,6 +81,12 @@ a:hover {
   text-decoration: none;
 }
 
+/* MEnu Fixed */
+.shadow-btm {
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.05);
+  }
+
+
 .small-text {
   font-size: 11px;
   color: $color-grey80;
@@ -77,17 +97,26 @@ a:hover {
 
 /* Sitemap Modal and Link Styles */
 .menulink {
-  margin: 0 auto;
-  padding-top: 10px;
-  a {
-    color: $color-grey100 !important;
-    font-size: 1.5em;
-    font-weight: $fw-thin;
-    letter-spacing: 0.1em;
-    span.oi::before {
-      font-size: 0.9em;
+  padding: 10px 0;
+  display: flex;
+  width: 100%;
+  div.flex-item {
+    flex: 48%;
+    a {
+    
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      color: $color-grey100 !important;
+      font-size: 1em;
+      font-weight: $fw-thin;
+      border: 0px solid red;
+      span.oi::before {
+        font-size: 0.9em;
+      }
     }
   }
+  
 }
 .modal-backdrop.show {
   opacity: 0.75;
@@ -140,3 +169,38 @@ a:hover {
     transform: scale(1);
   }
 }
+
+/* Breadcrumbs */
+.breadcrumb {
+  padding: 0;
+  margin-bottom: 0;
+  background: none;
+  border-radius: 0;
+  font-size: 11px;
+}
+
+/* Tab System */
+#TabTutorials ul.nav-tabs {
+  border-bottom: none;
+  margin-bottom: 3em;
+}
+#TabTutorials ul.nav-tabs li.nav-item {
+  background-color: none;
+}
+#TabTutorials ul.nav-tabs li.nav-item a.nav-link {
+  border: none;
+  padding: 0 0 0.4em;
+  margin-right: 3em;
+  border-radius: 0;
+}
+#TabTutorials ul.nav-tabs li.nav-item a.nav-link:hover {
+  border: none;
+}
+
+#TabTutorials ul.nav-tabs li.nav-item a.nav-link.active {
+  background-color: transparent;
+  border: none;
+  color: $color-grey80;
+  border-bottom: 2px solid $color-grey80;
+}
+

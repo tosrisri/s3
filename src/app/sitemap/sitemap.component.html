@@ -1,7 +1,16 @@
-<div class="container-fluid" > 
-    <div class="row">
-      <div class="menulink">
-        <a title="Menu" class="btn btn-link" (click)="open()"><span class="oi oi-menu"></span> MENU</a>
-      </div>    
+<div class="fixed-top shadow-btm">
+  <div class="container-fluid bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="menulink">
+          <div class="flex-item">
+            <a title="Menu" class="btn btn-link" (click)="open()"><span class="oi oi-menu"></span></a>
+          </div>
+          <div class="flex-item">
+            <a class="nav-link" [routerLink]="['/home']" (click)="isMenuCollapsed = true" title="Srini">Srini B</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
