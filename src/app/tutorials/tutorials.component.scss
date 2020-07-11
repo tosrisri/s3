@@ -42,6 +42,12 @@
   right: 0;
   z-index: 1;
 }
+.post-title__img-overlay.gradient-bv {
+    background-image: linear-gradient(135deg,#1da1f2,#981ceb);
+background-color: #1b95e0;
+}
+
+
 .post-title-wrap img {
   margin: 0 auto;
   display: block;
