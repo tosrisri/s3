@@ -180,6 +180,9 @@ a:hover {
 }
 
 /* Tab System */
+.tab-content > .tab-pane {
+  margin-bottom: 8em;
+  }
 #TabTutorials ul.nav-tabs {
   border-bottom: none;
   margin-bottom: 3em;

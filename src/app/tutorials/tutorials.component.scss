@@ -30,9 +30,9 @@
 
 /* Tab Content */
 .post-title-wrap {
-    position: relative;
-    max-height: 280px;
-    }
+  position: relative;
+  max-height: 280px;
+}
 .post-title__img-overlay {
   background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
@@ -42,9 +42,31 @@
   right: 0;
   z-index: 1;
 }
-.post-title__img-overlay.gradient-bv {
-    background-image: linear-gradient(135deg,#1da1f2,#981ceb);
-background-color: #1b95e0;
+
+.post-title__img-overlay.gradient-ux {
+  background: rgb(131,58,180);
+  background: linear-gradient(339deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 69%, rgba(252,176,69,1) 100%);
+}
+.post-title__img-overlay.gradient-css {
+  background-image: linear-gradient(135deg,#1da1f2,#981ceb);
+  background-color: #1b95e0;
+}
+.post-title__img-overlay.gradient-html {
+  background: rgb(1,122,152);
+  background: linear-gradient(334deg, rgba(1,122,152,1) 0%, rgba(107,153,179,1) 55%, rgba(253,158,45,1) 100%);
+  background: #2C3E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.post-title__img-overlay.gradient-random {
+  background: rgb(115,199,250);
+  background: linear-gradient(151deg, rgba(115,199,250,1) 0%, rgba(241,51,106,1) 72%, rgba(251,86,99,1) 100%);
+  background: #43C6AC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2C3E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
@@ -60,15 +82,15 @@ background-color: #1b95e0;
   transform: translate(-50%, -50%);
   z-index: 1;
   margin: 0;
-padding: 0;
-font-size: 10em;
-font-weight: $fw-bold;
-opacity: 0.3;
-width: 100%;
-text-align: center;
-filter: blur(2px);
-width: 100%;
-text-align: center;
+  padding: 0;
+  font-size: 10em;
+  font-weight: $fw-bold;
+  opacity: 0.3;
+  width: 100%;
+  text-align: center;
+  filter: blur(4px);
+  width: 100%;
+  text-align: center;
 }
 
 .section {
@@ -92,6 +114,8 @@ text-align: center;
   display: flex;
   text-decoration: none;
   background-color: #ececec;
+  transition: background-color 1s ease-out, color 1s ease-out;
+
 }
 .grid-item:nth-child(3n + 1) {
   flex: 1 100%;
