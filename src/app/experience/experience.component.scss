@@ -1,0 +1,11 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+#Experience {
+border: 0x solid red;
+
+}
+.post-title__img-overlay.gradient-exp {
+    background-image: linear-gradient(125deg,#1da1f2,#981ceb);
+    background-color: #1b95e0;
+  }
