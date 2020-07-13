@@ -13,6 +13,7 @@ import { ServicesComponent } from './services/services.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { ExperienceComponent } from './experience/experience.component';
     CarouselComponent,
     CountdownComponent,
     SitemapComponent, 
-    NgbdModalContent, TutorialsComponent, ServicesComponent, PortfolioComponent, ContactComponent, ExperienceComponent
+    NgbdModalContent, TutorialsComponent, ServicesComponent, PortfolioComponent, ContactComponent, ExperienceComponent, FooterComponent
   ],
   entryComponents: [NgbdModalContent],
   imports: [

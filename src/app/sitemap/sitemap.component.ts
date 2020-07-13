@@ -12,22 +12,22 @@ import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
     <div class="modal-body">
       <ul class="sitemap-links">
         <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/home']" (click)="isMenuCollapsed = true"  title="Home">Home</a>
+          <a class="nav-link" [routerLink]="['/home']"  title="Home">Home</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/experience']" (click)="isMenuCollapsed = true"  title="Experience">Experience</a>
+          <a class="nav-link" [routerLink]="['/experience']"  title="Experience">Experience</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/portfolio']" (click)="isMenuCollapsed = true"  title="Portfolio">Portfolio</a>
+          <a class="nav-link" [routerLink]="['/portfolio']"  title="Portfolio">Portfolio</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/services']" (click)="isMenuCollapsed = true"  title="Services">Services</a>
+          <a class="nav-link" [routerLink]="['/services']"  title="Services">Services</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/tutorials']" (click)="isMenuCollapsed = true"  title="Tutorials">Tutorials</a>
+          <a class="nav-link" [routerLink]="['/tutorials']"  title="Tutorials">Tutorials</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/contact']" (click)="isMenuCollapsed = true"  title="Contact">Contact</a>
+          <a class="nav-link" [routerLink]="['/contact']"  title="Contact">Contact</a>
         </li>
       </ul>
     </div>

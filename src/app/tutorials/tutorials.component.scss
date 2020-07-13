@@ -46,9 +46,12 @@
 .post-title__img-overlay.gradient-ux {
   background: rgb(131,58,180);
   background: linear-gradient(339deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 69%, rgba(252,176,69,1) 100%);
+  background-image: linear-gradient(125deg, #ffc63f 0%, #fd3358 51%, #bc35d8 100%);
+background-size: cover;
 }
+
 .post-title__img-overlay.gradient-css {
-  background-image: linear-gradient(135deg,#1da1f2,#981ceb);
+  background-image: linear-gradient(125deg,#1da1f2,#981ceb);
   background-color: #1b95e0;
 }
 .post-title__img-overlay.gradient-html {
@@ -67,6 +70,9 @@
   background: #2C3E50;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #00ae7b;
+  background: linear-gradient(125deg,#00ae7b,#0081bf);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ae7b",endColorstr="#0081bf",GradientType=1);
 }
 
 

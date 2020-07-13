@@ -1,0 +1,75 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.footer-wrapper {
+  background-color: #292F33;
+  margin: 4em 0 0 0;
+  padding: 4em 0;
+  z-index: -9999;
+}
+
+.footer-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-links li {
+  margin: 0 0 0.5em;
+  padding: 0;
+}
+
+#Footer p {
+  color: $color-grey70 !important;
+}
+#Footer a:hover {
+  color: white !important;
+}
+
+.link-anim {
+  display: inline-block;
+  color: #ccc;
+  text-decoration: none;
+  font-family: Roboto;
+font-weight: 100;
+}
+
+.link-anim::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #ccc;
+  transition: width .3s;
+}
+
+.link-anim:hover::after {
+  width: 100%;
+  //transition: width .3s;
+}
+.social-links {
+  border: 0px solid red;
+}
+.social-links a {
+  color: $color-grey70;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 0 0.3em;
+}
+.copy-info {
+  text-align: center;
+  font-size: 11px;
+}
+#Footer hr {
+  border-top: 1px dotted #444;
+}
+
+/* 
+.tweet-cont {
+  max-height: 500px;
+  padding: 0 2em;
+  border: 0px solid red;
+  overflow-y: scroll;
+} */
+
+
+
