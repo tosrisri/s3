@@ -15,7 +15,7 @@ import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
           <a class="nav-link" [routerLink]="['/home']"  title="Home">Home</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/experience']"  title="Resume">Resume</a>
+          <a class="nav-link" [routerLink]="['/experience']"  title="Experience">Experience</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
           <a class="nav-link" [routerLink]="['/portfolio']"  title="Portfolio">Portfolio</a>

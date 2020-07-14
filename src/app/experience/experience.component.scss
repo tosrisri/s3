@@ -1,11 +1,43 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
-#Experience {
+#Experience * {
 border: 0x solid red;
+color: $color-grey60;
 
 }
 .post-title__img-overlay.gradient-exp {
-    background-image: linear-gradient(125deg,#1da1f2,#981ceb);
-    background-color: #1b95e0;
+    background: rgb(162,169,175);
+    background: linear-gradient(90deg, rgba(162,169,175,1) 0%, rgba(168,173,179,1) 35%, rgba(224,225,227,1) 100%);
   }
+
+  .exp-table tbody td {
+      padding: 2em 0 2em 1em;
+      border: 0px solid red;
+  }
+  h5.excerpt {
+      margin: 3em 0;
+      text-align: center;
+  }
+  h5.excerpt::first-letter {
+      font-size: 1.4em;
+  }
+
+ /* h5.sub-title {
+     font-weight: normal;
+ } */
+
+ ul.skillset {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 1em;
+    padding: 0;
+    justify-content: auto;
+    align-content: flex-start;
+ }
+ ul.skillset li {
+    border: 0px solid #eee;
+padding: 0.5em 1em 0.5em 0;
+flex-basis: 25%;
+ }
