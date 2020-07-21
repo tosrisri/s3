@@ -86,7 +86,7 @@ background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, F
   -o-background-clip: text;
   background-clip: text;
 }
-h2.boldtext.text {
+/* h2.boldtext.text {
   color: transparent;
   background-size: 200% auto;
   animation: pass 15s reverse infinite;
@@ -95,5 +95,24 @@ h2.boldtext.text {
 @keyframes pass {
   to {
     background-position: 200% center;
+  }
+} */
+
+h2.boldtext.text {
+  color: transparent;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: hue 10s infinite linear;
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
   }
 }
