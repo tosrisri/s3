@@ -1,0 +1,14 @@
+.parent-of-3col {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .child-of-3col {
+    //  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+    //  If we don't want the items to stretch:
+    // flex: 0 1 300px;
+    //  If we do want the items to stretch:
+    flex: 1 1 330px;
+    border: 1px solid red;
+
+  }
