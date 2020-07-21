@@ -43,6 +43,57 @@ h4 {
   margin: 3em 0 1em 0;
 }
 
-  .ngbcarousel {
-    outline: none;
+.ngbcarousel {
+  outline: none;
+}
+
+h2.boldtext {
+  display: inline-block;
+  overflow: hidden;
+  /* Background to mask */
+  animation: anim 15s linear infinite;
+  color: transparent;
+text-shadow: 0px 0px 4px rgba(255,255,255,0.55);
+}
+h2.boldtext.first {
+  background: url("https://bit.ly/ZxCkSc");
+  background: #FF8008;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background-position: 0 50%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+}
+h2.boldtext.second {
+  background: #215f00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #e4e4d9, #215f00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #e4e4d9, #215f00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-position: 0 50%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+}
+h2.boldtext.third {
+  background: #ddd6f3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-position: 0 50%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+}
+h2.boldtext.text {
+  color: transparent;
+  background-size: 200% auto;
+  animation: pass 15s reverse infinite;
+}
+
+@keyframes pass {
+  to {
+    background-position: 200% center;
   }
+}
