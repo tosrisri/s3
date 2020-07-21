@@ -27,7 +27,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot()
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
