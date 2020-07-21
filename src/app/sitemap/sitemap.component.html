@@ -4,7 +4,39 @@
       <div class="row">
         <div class="menulink">
           <div class="flex-item">
-            <a title="Menu" class="btn btn-link" (click)="open()"><i class="fa fa-bars"></i></a>
+            <!-- <a title="Menu" class="btn btn-link" (click)="open()"><i class="fa fa-bars"></i></a> -->
+            <div class="outer-menu">
+              <input class="checkbox-toggle" type="checkbox" />
+              <div class="hamburger">
+                <div></div>
+              </div>
+              <div class="menu">
+                <div>
+                  <div>
+                    <ul>
+                      <li class="nav-item" [routerLinkActive]="['active']">
+                        <a class="nav-link" [routerLink]="['/home']"  title="Home">Home</a>
+                      </li>
+                      <li class="nav-item" [routerLinkActive]="['active']">
+                        <a class="nav-link" [routerLink]="['/experience']"  title="Experience">Experience</a>
+                      </li>
+                      <li class="nav-item" [routerLinkActive]="['active']">
+                        <a class="nav-link" [routerLink]="['/portfolio']"  title="Portfolio">Portfolio</a>
+                      </li>
+                      <li class="nav-item" [routerLinkActive]="['active']">
+                        <a class="nav-link" [routerLink]="['/services']"  title="Services">Services</a>
+                      </li>
+                      <li class="nav-item" [routerLinkActive]="['active']">
+                        <a class="nav-link" [routerLink]="['/tutorials']"  title="Tutorials">Tutorials</a>
+                      </li>
+                      <li class="nav-item" [routerLinkActive]="['active']">
+                        <a class="nav-link" [routerLink]="['/contact']"  title="Contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="flex-item">
             <a class="nav-link" [routerLink]="['/home']" title="Srini">Srini B</a>
