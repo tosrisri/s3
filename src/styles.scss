@@ -310,3 +310,8 @@ hr.spacer {
   width: 100%;
   border: none;
 }
+
+/* make carousel indictors black */
+.carousel-indicators li {
+  background-color: #000;
+}
