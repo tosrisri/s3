@@ -80,6 +80,53 @@ a:hover {
   color: $color-grey100 !important;
   text-decoration: none;
 }
+a.external {
+  display: block;
+  margin-bottom: 0.5em;
+}
+a.external::before {
+  content: '';
+  display: inline-block;
+  background: url("../src/assets/img/external.svg") left center no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+h5.excerpt {
+  margin: 2em 0;
+}
+h5.excerpt::first-letter {
+  font-size: 1.4em;
+}
+h2.page-title {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+background-image: linear-gradient(180deg, rgba(168,173,179,1) 0%, rgba(213,213,213,1) 50%, rgba(248,248,248,1) 85%);
+  background-repeat: repeat;
+  text-transform: uppercase;
+}
+h5.sub-title {
+  color: $color-grey80;
+  width: 100%;
+  margin-top: 4em;
+}
+h6.article-heading {
+  font-size: 2.5em;
+}
+/* h6.article-heading::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background: #555;
+  vertical-align: top;
+  margin-top: 11px;
+  margin-right: 10px;
+} */
+
 
 /* MEnu Fixed */
 .shadow-btm {

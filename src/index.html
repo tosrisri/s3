@@ -38,6 +38,7 @@
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
   <!-- Portfolio Masonry Script -->
   <script>
+    // Portfolio Filter Gallery
     $(document).ready(function(){
       $(".button").click(function(){
         var value = $(this).attr("data-filter");
@@ -56,6 +57,14 @@
         })
       })
     })
+  </script>
+  <!-- Grid Table Script -->
+  <script>
+    const gridTableCells = document.querySelectorAll('.grid-table > div');
+    gridTableCells.forEach((cell) => {
+      const orderNum = cell.getAttribute('order');
+      (orderNum % 2 !== 0) && (cell.className = '--is-striped');
+    });
   </script>
 </body>
 </html>
