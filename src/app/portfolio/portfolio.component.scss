@@ -1,12 +1,100 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
-/* Greyscale image and hover color 
-.logo-wrapper a {
-    filter:grayscale(1);
-    transition:all ease 0.6s;
+ul.filter-buttons {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
 }
 
-.logo-wrapper a:hover {
-    filter:grayscale(0);
-}*/
+ul.filter-buttons li {
+    padding: 1em;
+    text-transform: uppercase;
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+ul.filter-buttons li:hover,
+ul.filter-buttons li.active {
+    background: #333;
+    color: #eee;
+}
+
+.wrapper {
+    padding: 2em 0;
+    position: relative;
+}
+
+
+.grid-cont {
+    flex-flow: row wrap;
+    display: flex;
+    padding: 4em 0em;
+}
+
+.grid-cont .box {
+    flex: auto;
+    width: calc(99%/3);
+    box-sizing: border-box;
+    margin: 1px;
+    position: relative;
+}
+.grid-cont .box a {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba($color: #ffffff, $alpha: 0.9);
+    color: #000000 !important;
+    text-decoration: none;
+    padding: 1em;
+    margin: 1px;
+    width: calc(calc(100% - 2px));
+    opacity: 1;
+}
+
+.grid-cont .box img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*Grayscale*/
+
+.grid-cont .box img {
+    filter: grayscale(100%);
+    filter: saturate(0);
+    transition: all .4s ease;
+    /*   box-shadow: 2px 2px 5px; */
+}
+
+.grid-cont .box:hover {
+    cursor: pointer;
+}
+.grid-cont .box:hover img {
+    filter: grayscale(0);
+    filter: saturate(1.5);
+    // transform: scale(1.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+.grid-cont .box:hover a {
+    display: block;
+    pointer-events: none;
+    animation: fadein 2s;
+}
+.grid-cont .box:hover a:hover {
+    display: block;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
