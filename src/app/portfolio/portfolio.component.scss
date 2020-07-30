@@ -41,46 +41,38 @@ ul.filter-buttons li.active {
     flex: auto;
     width: calc(99%/3);
     box-sizing: border-box;
-    margin: 0px;
+    // border: 1px solid #000;
     position: relative;
-    background-size: cover;
+    // background-size: cover;
     background-repeat: no-repeat;
     min-height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    opacity: 0.95;
+    margin: 1px;
 }
 .grid-cont .box a {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    
-    color: #ffffff !important;
+    color: #999 !important;
     text-decoration: none;
-    padding: 1em;
-    text-align: center;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    font-weight: 100;
+    opacity: 0;
+    font-size: 0.8em;
+    text-transform: uppercase;
 }
-
-.grid-cont .box img {
-    width: 100%;
-    height: auto;
-}
-
-.grid-cont .box:hover {
-    cursor: pointer;
+.grid-cont .box a span {
+    padding: 0.2em 0;
+    color: #bbb;
+    font-size: 1.5em;
 }
 
 .grid-cont .box:hover a {
-    display: block;
-    pointer-events: none;
     animation: fadein 1s;
-    background-color: rgba($color: #000000, $alpha: 0.75);
-}
-.grid-cont .box:hover a:hover {
-    display: block;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    opacity: 1;
 }
 
 
@@ -96,7 +88,7 @@ ul.filter-buttons li.active {
 
 /* Background images */
 /* Apps */
-.boxbg-1 { background: url("../../assets/work/webapp-asda-checkout.png"); }
+.boxbg-1 { background: url("../../assets/work/webapp-asda-products.png"); background-position: 14% 1%; }
 .boxbg-10 { background: url("../../assets/work/webapp-xfinity-offers.png"); }
 .boxbg-11 { background: url("../../assets/work/webapp-cl-allcalls.png"); }
 .boxbg-12 { background: url("../../assets/work/webapp-01-bki-dashboard.png"); }
@@ -116,3 +108,6 @@ ul.filter-buttons li.active {
 /* UX */
 .boxbg-9 { background: url("../../assets/work/ux-Journey-Map.png"); }
 .boxbg-4 { background: url("../../assets/work/ux-Persona-Carl-Vine.png"); }
+
+/* Mobile */
+.boxbg-14 { background: url("../../assets/work/mobile-Event-03-Summary.png"); }
