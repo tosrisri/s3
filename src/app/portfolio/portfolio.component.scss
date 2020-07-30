@@ -40,21 +40,23 @@ ul.filter-buttons li.active {
     flex: auto;
     width: calc(99%/3);
     box-sizing: border-box;
-    margin: 1px;
+    margin: 0px;
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .grid-cont .box a {
     display: none;
     position: absolute;
     left: 0;
-    bottom: 0;
-    background-color: rgba($color: #ffffff, $alpha: 0.9);
-    color: #000000 !important;
+    top: 0;
+    
+    color: #ffffff !important;
     text-decoration: none;
     padding: 1em;
-    margin: 1px;
-    width: calc(calc(100% - 2px));
-    opacity: 1;
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }
 
 .grid-cont .box img {
@@ -65,31 +67,34 @@ ul.filter-buttons li.active {
 
 /*Grayscale*/
 
-.grid-cont .box img {
-    filter: grayscale(100%);
+.grid-cont .box {
+     /* filter: grayscale(100%);
     filter: saturate(0);
-    transition: all .4s ease;
-    /*   box-shadow: 2px 2px 5px; */
+    transition: all .3s ease;
+     box-shadow: 2px 2px 5px; */
 }
 
 .grid-cont .box:hover {
     cursor: pointer;
 }
-.grid-cont .box:hover img {
-    filter: grayscale(0);
+.grid-cont .box:hover {
+    /* filter: grayscale(0);
     filter: saturate(1.5);
-    // transform: scale(1.2);
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    transform: scale(1.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4); */
 }
 
 .grid-cont .box:hover a {
     display: block;
     pointer-events: none;
-    animation: fadein 2s;
+    animation: fadein 1s;
+    background-color: rgba($color: #000000, $alpha: 0.75);
 }
 .grid-cont .box:hover a:hover {
     display: block;
 }
+
+
 @keyframes fadein {
     from {
         opacity:0;
@@ -98,3 +103,27 @@ ul.filter-buttons li.active {
         opacity:1;
     }
 }
+
+
+/* Background images */
+/* Apps */
+.boxbg-1 { background: url("../../assets/work/webapp-asda-checkout.png"); }
+.boxbg-10 { background: url("../../assets/work/webapp-xfinity-offers.png"); }
+.boxbg-11 { background: url("../../assets/work/webapp-cl-allcalls.png"); }
+.boxbg-12 { background: url("../../assets/work/webapp-01-bki-dashboard.png"); }
+
+
+/* Websites  */
+.boxbg-2 { background: url("../../assets/work/website-01.jpg"); }
+.boxbg-3 { background: url("../../assets/work/website-amalc-01.png"); }
+
+.boxbg-5 { background: url("../../assets/work/website-Mobile-3.jpg"); }
+.boxbg-6 { background: url("../../assets/work/website-pht.png"); }
+.boxbg-7 { background: url("../../assets/work/website-wal01.png"); }
+
+.boxbg-8 { background: url("../../assets/work/graphics-emailer.jpg"); }
+.boxbg-13 { background: url("../../assets/work/graphics-nats-poster.jpg"); }
+
+/* UX */
+.boxbg-9 { background: url("../../assets/work/ux-Journey-Map.png"); }
+.boxbg-4 { background: url("../../assets/work/ux-Persona-Carl-Vine.png"); }
