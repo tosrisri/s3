@@ -27,6 +27,7 @@ ul.filter-buttons li.active {
 .wrapper {
     padding: 2em 0;
     position: relative;
+    width: 100%;
 }
 
 
@@ -44,6 +45,10 @@ ul.filter-buttons li.active {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .grid-cont .box a {
     display: none;
@@ -64,24 +69,8 @@ ul.filter-buttons li.active {
     height: auto;
 }
 
-
-/*Grayscale*/
-
-.grid-cont .box {
-     /* filter: grayscale(100%);
-    filter: saturate(0);
-    transition: all .3s ease;
-     box-shadow: 2px 2px 5px; */
-}
-
 .grid-cont .box:hover {
     cursor: pointer;
-}
-.grid-cont .box:hover {
-    /* filter: grayscale(0);
-    filter: saturate(1.5);
-    transform: scale(1.2);
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.4); */
 }
 
 .grid-cont .box:hover a {
