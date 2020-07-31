@@ -1,6 +1,10 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
+#Portfolio * {
+    color: #666;
+}
+
 ul.filter-buttons {
     position: relative;
     width: 100%;
@@ -31,25 +35,39 @@ ul.filter-buttons li.active {
 }
 
 
-.grid-cont {
-    flex-flow: row wrap;
-    display: flex;
-    padding: 4em 0em;
+ul.filter-items {
+    list-style: none;
+    margin: 2em 0;
 }
 
-.grid-cont .box {
-    flex: auto;
-    width: calc(99%/3);
-    box-sizing: border-box;
-    // border: 1px solid #000;
-    position: relative;
-    // background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 300px;
-    opacity: 0.95;
-    margin: 1px;
+ul.filter-items li {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    margin: 5em 0;
 }
-.grid-cont .box a {
+.box-item {
+    min-height: 200px;
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    transition: height;
+}
+.box-item:first-child {
+    flex-basis: 15%;
+}
+.box-item:nth-child(2) {
+    flex-basis: 20%;
+}
+.box-item:last-child {
+    flex-basis: 55%;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-item a {
     color: #999 !important;
     text-decoration: none;
     height: 100%;
@@ -62,18 +80,29 @@ ul.filter-buttons li.active {
     opacity: 0;
     font-size: 0.8em;
     text-transform: uppercase;
-}
-.grid-cont .box a span {
-    padding: 0.2em 0;
-    color: #bbb;
-    font-size: 1.5em;
-}
-
-.grid-cont .box:hover a {
-    animation: fadein 1s;
+} 
+.box-item a:hover {
+    animation: fadein 2s;
     background-color: rgba($color: #000000, $alpha: 0.9);
     opacity: 1;
 }
+.box-item h5 {
+    font-size: 1.5em;
+}
+.box-item h6 {
+    font-size: 0.8em;
+}
+.box-item a.vcs {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+.asda { background: url("../../assets/work/webapp-asda-products.png"); }
+
+
+
 
 
 @keyframes fadein {
@@ -84,30 +113,3 @@ ul.filter-buttons li.active {
         opacity:1;
     }
 }
-
-
-/* Background images */
-/* Apps */
-.boxbg-1 { background: url("../../assets/work/webapp-asda-products.png"); background-position: 14% 1%; }
-.boxbg-10 { background: url("../../assets/work/webapp-xfinity-offers.png"); }
-.boxbg-11 { background: url("../../assets/work/webapp-cl-allcalls.png"); }
-.boxbg-12 { background: url("../../assets/work/webapp-01-bki-dashboard.png"); }
-
-
-/* Websites  */
-.boxbg-2 { background: url("../../assets/work/website-01.jpg"); }
-.boxbg-3 { background: url("../../assets/work/website-amalc-01.png"); }
-
-.boxbg-5 { background: url("../../assets/work/website-Mobile-3.jpg"); }
-.boxbg-6 { background: url("../../assets/work/website-pht.png"); }
-.boxbg-7 { background: url("../../assets/work/website-wal01.png"); }
-
-.boxbg-8 { background: url("../../assets/work/graphics-emailer.jpg"); }
-.boxbg-13 { background: url("../../assets/work/graphics-nats-poster.jpg"); }
-
-/* UX */
-.boxbg-9 { background: url("../../assets/work/ux-Journey-Map.png"); }
-.boxbg-4 { background: url("../../assets/work/ux-Persona-Carl-Vine.png"); }
-
-/* Mobile */
-.boxbg-14 { background: url("../../assets/work/mobile-Event-03-Summary.png"); }
