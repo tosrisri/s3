@@ -2,14 +2,17 @@
 @import "../../scss/mixins";
 
 /* ------ */
+#CarouselCont {
+  margin-top: -60px;
+}
 .ngbcarousel {
-  height: 95vh;
+  height: 98vh;
 }
 .picsum-img-wrapper {
   border: 0px solid red;
   background: no-repeat center center scroll;
   background-size: cover;
-  height: 95vh;
+  height: 98vh;
 }
 
 .carousel-caption {
@@ -85,6 +88,7 @@ background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, F
   -moz-background-clip: text;
   -o-background-clip: text;
   background-clip: text;
+  font-size: 7.5em;
 }
 /* h2.boldtext.text {
   color: transparent;

@@ -1,0 +1,16 @@
+
+
+.grid-box {
+    display: grid;
+    grid-template-rows:    minmax(100px, auto);
+grid-template-columns: 35% 50%;
+grid-gap: 5%;
+width: 100%;
+margin: 3em 0;
+}
+.gbox {
+    margin-bottom: 2em;
+}
+h6 {
+    text-transform: uppercase;
+}
