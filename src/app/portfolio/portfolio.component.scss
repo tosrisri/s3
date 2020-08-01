@@ -44,6 +44,9 @@ ul.filter-items > li {
     align-content: center;
 }
 
+ul.filter-items > li:nth-child(even) {
+    flex-direction: row-reverse;
+}
 .box-item:first-child {
     flex-basis: 30%;
     align-self: center;
@@ -76,7 +79,8 @@ ul.filter-items .box h6 span {
 
 .asda { background: url("../../assets/work/webapp-asda-products.png"); }
 .amalc { background: url("../../assets/work/website-amalc-01.png"); }
-
+.zemoso { background: url("../../assets/work/zemoso/00-Persona-Carl-Vine.png"); }
+.pihap { background: url("../../assets/work/pi/PI-UX-Audit.png"); }
 
 
 
