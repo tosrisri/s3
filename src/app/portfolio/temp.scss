@@ -1,0 +1,135 @@
+.grid-cont {
+    flex-flow: row wrap;
+    display: flex;
+    padding: 4em 0em;
+}
+
+.grid-cont .box {
+    flex: auto;
+    width: calc(99%/3);
+    box-sizing: border-box;
+    // border: 1px solid #000;
+    position: relative;
+    // background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    opacity: 0.95;
+    margin: 1px;
+}
+.grid-cont .box a {
+    color: #999 !important;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 100;
+    opacity: 0;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+.grid-cont .box a span {
+    padding: 0.2em 0;
+    color: #bbb;
+    font-size: 1.5em;
+}
+
+.grid-cont .box:hover a {
+    animation: fadein 1s;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    opacity: 1;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
+/* Background images */
+/* Apps */
+
+.boxbg-10 { background: url("../../assets/work/webapp-xfinity-offers.png"); }
+.boxbg-11 { background: url("../../assets/work/webapp-cl-allcalls.png"); }
+.boxbg-12 { background: url("../../assets/work/webapp-01-bki-dashboard.png"); }
+
+
+/* Websites  */
+.boxbg-2 { background: url("../../assets/work/website-01.jpg"); }
+.boxbg-3 { background: url("../../assets/work/website-amalc-01.png"); }
+
+.boxbg-5 { background: url("../../assets/work/website-Mobile-3.jpg"); }
+.boxbg-6 { background: url("../../assets/work/website-pht.png"); }
+.boxbg-7 { background: url("../../assets/work/website-wal01.png"); }
+
+.boxbg-8 { background: url("../../assets/work/graphics-emailer.jpg"); }
+.boxbg-13 { background: url("../../assets/work/graphics-nats-poster.jpg"); }
+
+/* UX */
+.boxbg-9 { background: url("../../assets/work/ux-Journey-Map.png"); }
+.boxbg-4 { background: url("../../assets/work/ux-Persona-Carl-Vine.png"); }
+
+/* Mobile */
+.boxbg-14 { background: url("../../assets/work/mobile-Event-03-Summary.png"); }
+
+
+
+
+
+/////////////////////@extend
+<div class="grid-cont">
+<div class="box filter apps boxbg-1">
+    <a href="#">Web Application <span>ASDA Groceries</span></a>
+</div>
+
+<div class="box filter ux boxbg-4">
+    <a href="#">UX <span>Persona Template</span></a>
+</div>
+
+<div class="box filter websites boxbg-2">
+    <a href="#">West Agile Labs <span>Home Page</span></a>
+</div>
+
+<div class="box filter ux boxbg-9">
+    <a href="#">User Journey Map <span></span></a>
+</div>
+
+<div class="box filter graphic boxbg-8">
+    <a href="#">NATS Poster <span></span></a>
+</div>
+
+<div class="box filter apps boxbg-10">
+    <a href="#">Comcast Xfinity Mobile <span>Product Pages</span></a>
+</div>
+
+<div class="box filter websites boxbg-6">
+    <a href="#">Persona <span></span></a>
+</div>
+
+<div class="box filter graphic boxbg-13">
+    <a href="#">Persona <span></span></a>
+</div>
+
+<div class="box filter apps boxbg-11">
+    <a href="#">Cypress Lawn <span>Home Page</span></a>
+</div>
+
+<div class="box filter apps boxbg-12">
+    <a href="#">BKI<span>Home Page</span></a>
+</div>
+
+<div class="box filter websites boxbg-7">
+    <a href="#">Persona <span></span></a>
+</div>
+
+<div class="box filter mobile boxbg-14">
+    <a href="#">Mobile <span>Zemoso</span></a>
+</div>
+</div>

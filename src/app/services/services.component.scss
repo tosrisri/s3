@@ -1,6 +1,7 @@
 .parent-of-3col {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   
   .child-of-3col {
@@ -8,7 +9,7 @@
     //  If we don't want the items to stretch:
     // flex: 0 1 300px;
     //  If we do want the items to stretch:
-    flex: 1 1 330px;
-    border: 1px solid red;
+    flex: 0 0 calc(90%/3);
+    border: 0px solid #f2f2f2;
 
   }

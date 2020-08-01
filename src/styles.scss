@@ -4,67 +4,59 @@
 
 body {
   background-color: $color-grey20;
-  font-size: $fs-6;
+  font-size: 18px;
   font-weight: $fw-thin;
-  color: #555555;
+  color: rgba($color-black, $alpha: 0.5);
   line-height: 1.618em;
   padding-top: 60px;
+  font-smooth: auto;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
-h1,
-.h1 {
-  font-size: $fs-1;
-  font-size: $fs-3;
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgba($color-black, $alpha: 0.7);
+  font-weight: $fw-thin;
+  line-height: 1.618em;
 }
-h2,
-.h2 {
-  font-size: $fs-2;
+
+h1 { font-size: 10em; }
+h2 { font-size: 9em; }
+h3 { font-size: 6em; }
+h4 { font-size: 4em; }
+h5 { font-size: 2em; }
+h6 { font-size: 1.1em; font-weight: 100; }
+
+.carousel-item h2, .carousel-item h3, .carousel-item h4, .carousel-item h5, .carousel-item h6 {
+  color: $primary-color-black;
+}
+.carousel-item h2 {
   font-weight: $fw-bold;
 }
-h3,
-.h3 {
-  font-size: $fs-3;
-  font-weight: $fw-thin;
+.carousel-item h4 {
+  font-weight: $fw-300;
 }
-h4,
-.h4 {
-  font-size: $fs-4;
-  font-weight: $fw-thin;
-}
-h5,
-.h5 {
-  font-size: $fs-5;
-  font-weight: $fw-thin;
-}
-h6,
-.h6 {
-  font-size: $fs-6;
-  font-weight: $fw-thin;
-}
-
-h5,
-h6 {
-  line-height: 1.6;
-}
-
 .hr {
-  height: 1px;
-  border-top: 1px dotted $color-grey60;
-  margin: 2em auto 1em auto;
-  width: 25%;
+  height: 0.05em;
+  // border-top: 1px dotted $primary-color-black;
+  margin: 3em auto 2em auto;
+  width: 35%;
+  background: $primary-color-black;
+background: linear-gradient(90deg, rgba(248,248,248,0) 0%, rgba(0,0,0,0.10) 45%, rgba(0,0,0,0.10) 55%, rgba(248,248,248,0) 100%);
 }
 .hr-w100 {
   height: 1px;
-  border-top: 1px dotted $color-grey40;
+  border-top: 1px dotted $primary-color-black;
   margin: 0 auto;
 }
 .bg-white {
-  background-color: $color-grey00;
+  background-color: $color-white;
 }
-a,
-.btn,
-div,
-p {
+a, .btn, div, .abtn, p {
   outline: none;
+}
+a {
+  color: $color-black;
 }
 a, a:hover {
   text-decoration: none;
@@ -82,10 +74,21 @@ a.external::before {
   margin-right: 5px;
 }
 
-
+a.abtn {
+  background-color: $color-black;
+  color: $primary-color-white;
+  border: 1px solid $color-black;
+  padding: 1em 2em;
+  font-weight: 300;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+a.abtn:hover {
+  background-color: transparent;
+  color: $color-black;
+}
 
 h5.excerpt {
-  margin: 2em 0;
   text-align: center;
 }
 h5.excerpt::first-letter {
@@ -101,9 +104,9 @@ background-image: linear-gradient(to bottom, #dedede 25%, transparent 80%);
   background-repeat: repeat;
   text-transform: capitalize;
   text-align: center;
+  font-weight: $fw-thick;
 }
 h5.sub-title {
-  color: $color-grey80;
   width: 100%;
   margin-top: 3em;
 }
@@ -130,7 +133,6 @@ h6.article-heading {
 
 .small-text {
   font-size: 11px;
-  color: $color-grey80;
 }
 .text-st {
   text-decoration: line-through;
@@ -148,7 +150,7 @@ h6.article-heading {
       text-align: left;
       padding: 0;
       margin: 0;
-      color: $color-grey100 !important;
+      color: $color-black !important;
       font-size: 1em;
       font-weight: $fw-thin;
       border: 0px solid red;
@@ -164,7 +166,7 @@ h6.article-heading {
 }
 .modal-content {
   opacity: 0.85;
-  border: 1px solid $color-grey100;
+  border: 1px solid $primary-color-black;
   border-radius: 0;
   backdrop-filter: blur(10px);
   box-shadow: 0px 0px 1em 0.7em rgba(0, 0, 0, 0.4);
@@ -187,7 +189,7 @@ h6.article-heading {
   padding: 0;
   li {
     min-width: 200px;
-    border: 0px dotted $color-grey20;
+    border: 0px dotted $primary-color-black;
     flex: auto;
     a {
       font-weight: $fw-thin;
@@ -245,7 +247,7 @@ h6.article-heading {
   background-color: transparent;
   border: none;
   color: $color-grey80;
-  border-bottom: 2px solid $color-grey80;
+  border-bottom: 2px solid $primary-color-black;
 }
 
 .blurred {
@@ -272,7 +274,7 @@ h6.article-heading {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   background-color: none;
-  border-bottom: 2px solid $color-grey80;
+  border-bottom: 2px solid $primary-color-black;
 }
 
 /* Tab Content */
@@ -329,7 +331,7 @@ background-size: cover;
   display: block;
 }
 .post-title {
-  color: $color-grey00;
+  color: $primary-color-black;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -354,20 +356,7 @@ hr.spacer {
 
 /* make carousel indictors black */
 .carousel-indicators li {
-  background-color: #000;
+  background-color: $color-black;
 }
 
 
-a.abtn {
-  background-color: #343434;
-  color: #eee;
-  border: 1px solid #121212;
-  padding: 0.8em 1.8em;
-  font-weight: 300;
-  font-size: 0.8em;
-  text-transform: uppercase;
-}
-a.abtn:hover {
-  background-color: transparent;
-  color: #000000;
-}

@@ -9,6 +9,9 @@ ul.filter-buttons {
     justify-content: center;
     align-items: center;
     list-style: none;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 2em 0;
 }
 
 ul.filter-buttons li {
@@ -18,10 +21,13 @@ ul.filter-buttons li {
     cursor: pointer;
 }
 
-ul.filter-buttons li:hover,
+ul.filter-buttons li:hover {
+    background: rgba($color-black, $alpha: 0.3);
+    color: $color-white;
+}
 ul.filter-buttons li.active {
-    background: #333;
-    color: #eee;
+    background: $color-black;
+    color: $color-white;
 }
 
 .wrapper {
@@ -67,6 +73,7 @@ ul.filter-items li ul.tasks {
 ul.filter-items li ul.tasks li {
     margin: 0 0 0.2em 1.5em;
     font-size: 0.9em;
+    text-transform: capitalize;
 }
 ul.filter-items li ul.tasks p {
     margin: 0 0 0.2em;

@@ -15,12 +15,17 @@
   list-style: none;
 }
 .footer-links li {
-  margin: 0 0 0.5em;
+  margin: 0 0 0.3em;
   padding: 0;
 }
 
-#Footer p {
+#Footer p, #Footer h5 {
   color: $color-grey70 !important;
+}
+#Footer a {
+  color: rgba($primary-color-white, $alpha: 0.5);
+  font-weight: lighter;
+  font-size: 0.9em;
 }
 #Footer a:hover {
   color: white !important;
@@ -30,7 +35,6 @@
   display: inline-block;
   color: #ccc;
   text-decoration: none;
-  font-family: Roboto;
 font-weight: 100;
 }
 

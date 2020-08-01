@@ -22,9 +22,6 @@
   bottom: 0;
 }
 
-h4 {
-  line-height: 1.5;
-}
 
 .ngbcarousel .btn {
   border-radius: 0;
@@ -33,8 +30,7 @@ h4 {
   text-transform: uppercase;
   border-radius: 0;
   letter-spacing: 0.1em;
-  color: $color-grey60;
-  border-color: $color-grey40;
+
 }
 .ngbcarousel .btn:hover {
   background-color: $color-grey100;
@@ -88,7 +84,6 @@ background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, F
   -moz-background-clip: text;
   -o-background-clip: text;
   background-clip: text;
-  font-size: 7.5em;
 }
 /* h2.boldtext.text {
   color: transparent;
