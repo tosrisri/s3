@@ -1,11 +1,22 @@
-<section class="contact sections">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2 class="section-title">Contact Me</h2>
-            </div>
+<div id="Contact">
+    <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a [routerLink]="['/home']" title="Home"><i class="fa fa-home"></i></a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a [routerLink]="['/contact']"
+                        title="Articles">Contact Me</a></li>
+            </ol>
+        </nav>
+        <hr class="hr-w100 w-100" />
+    </div>
+    
+    <div class="row">
+        <div class="col">
+            <h2 class="page-title">Contact Me</h2>
+            <!-- <h5 class="excerpt">Need help or if you want to work with me please feel free to contact me. BTW people say I'm very prompt in replying. :-)</h5> -->
         </div>
     </div>
+
 
     <div class="container">
         <div class="row mb-5">
@@ -71,5 +82,4 @@
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScbtigcF3BOt8r80xxuM50mZZ9LMfIfWT-93mmTDrpc31h-fw/viewform?embedded=true" width="100%" height="1255" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
 
-
-</section>
+</div>
