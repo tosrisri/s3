@@ -27,7 +27,9 @@
 		perspective: 900px;
     transform-style: preserve-3d;
     height: 500px;
-    border: 1px solid red;
+	border: 0px solid red;
+	background-color: $color-white;
+	perspective: 300;
 	}
 	#slider .previous, #slider .next{
 		font-family: "FontAwesome";
@@ -68,6 +70,13 @@
 		transform: scale(0.5,0.5);
 		opacity: 0;
 		transition: all .3s;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		border: 0px solid blue;
+		padding: 2em 10%;
 	}
 
 	.slide.active{
@@ -141,4 +150,9 @@
 	#slider .bullets .bullet:hover{
 		border: 2px solid rgba(255,255,255,.8);
 		background: transparent;
+	}
+	
+
+	.designation {
+		font-size: 0.8em;
 	}
