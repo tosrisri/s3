@@ -1,8 +1,10 @@
-<div class="row mb-5">
+<div id="Turotials">
+<div class="row">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i></a></li>
-            <li class="breadcrumb-item active" aria-current="page"><a href="#">Tutorials</a></li>
+            <li class="breadcrumb-item"><a [routerLink]="['/home']" title="Home"><i class="fa fa-home"></i></a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a [routerLink]="['/tutorials']"
+                    title="Articles">Articles</a></li>
             <!-- <li class="breadcrumb-item"><a href="#">UX &amp; UI Design</a></li> -->
         </ol>
     </nav>
@@ -10,40 +12,55 @@
 </div>
 
 <div class="row">
-    <ngb-tabset [destroyOnHide]="false" [orientation]="currentOrientation" [justify]="currentJustify" id="TabTutorials">
+    <div class="col">
+        <h2 class="page-title">Articles</h2>
+        <h5 class="excerpt">To help junior designers and developers I seldom write artciles on various topics that
+            may range technology to random nonsense.</h5>
+    </div>
+</div>
+
+
+<div class="row">
+    <ngb-tabset [destroyOnHide]="false" [orientation]="currentOrientation" [justify]="currentJustify"
+        id="TabTutorials">
         <!-- Tab-1 -->
         <ngb-tab title="UX &amp; UI Design">
             <ng-template ngbTabContent>
                 <!-- Tab-1-Content -->
-                <div class="post-title-wrap">
-                    <div class="post-title__img-overlay gradient-ux"></div> 
-                    <img src="../../assets/img/blank.png" class="" height="280" alt="CSS">
-                    <h1 class="post-title">UX Design</h1>
-                </div>
 
                 <section class="section">
                     <div class="grid-cont">
                         <a class="grid-item">
-                            <h4>Difference between UI Design, UX Design, Interaction Design, Graphic Design &amp; Web
-                                Design.</h4>
-                                <p class="small-text my-0">2020.07.12</p>
-                            <h5>No doubt, there is a great turmoil in the small to mid IT companies about the Role of
-                                Designer(s) they want to hire. The technical pannel or the HR team are not sure who they actually need? A UI Desinger? UX Designer?</h5>
+                            <h5>Difference between UI Design, UX Design, Interaction Design, Graphic Design &amp;
+                                Web
+                                Design.</h5>
+                            <p class="small-text my-0">2020.07.12</p>
+                            <h6>No doubt, there is a great turmoil in the small to mid IT companies about the Role
+                                of
+                                Designer(s) they want to hire. The technical pannel or the HR team are not sure who
+                                they actually need? A UI Desinger? UX Designer?</h6>
+                            <span class="readit">read article</span>
                         </a>
                         <a class="grid-item">
-                            <h4>Latest trends of UI & UX in 2020.</h4>
+                            <h5>Latest trends of UI & UX in 2020.</h5>
                             <p class="small-text my-0">2020.07.12</p>
-                            <h5>Creativity has no bounds, just like life on planet it evolves everyday and year long. These are some of the trends designers across the world are following...</h5>
+                            <h6>Creativity has no bounds, just like life on planet it evolves everyday and year
+                                long. These are some of the trends designers across the world are following...</h6>
+                            <span class="readit">read article</span>
                         </a>
                         <a class="grid-item">
-                            <h4>What is Neumorphism anyway?</h4>
+                            <h5>What is Neumorphism anyway?</h5>
                             <p class="small-text my-0">2020.07.12</p>
-                            <h5>Neumorphism is a relatively new design trend which hasgot lot of traction lately. It's aesthetic is marked by minimal and real-looking UI...</h5>
+                            <h6>Neumorphism is a relatively new design trend which hasgot lot of traction lately.
+                                It's aesthetic is marked by minimal and real-looking UI...</h6>
+                                <span class="readit">read article</span>
                         </a>
                         <a class="grid-item">
-                            <h4>Golden Ratio. What is it?</h4>
+                            <h5>Golden Ratio. What is it?</h5>
                             <p class="small-text my-0">2020.07.12</p>
-                            <h5>Mathematically by definition: Two objects are said to be in golden ratio if their ratio is same as the ratio of their sum to the larger of the two quantities.</h5>
+                            <h6>Mathematically by definition: Two objects are said to be in golden ratio if their
+                                ratio is same as the ratio of their sum to the larger of the two quantities.</h6>
+                                <span class="readit">read article</span>
                         </a>
                     </div>
                 </section>
@@ -55,34 +72,36 @@
         <ngb-tab>
             <ng-template ngbTabTitle>CSS</ng-template>
             <ng-template ngbTabContent>
-                 <!-- Tab-1-Content -->
-                 <div class="post-title-wrap">
-                    <div class="post-title__img-overlay gradient-css"></div> 
-                    <img src="../../assets/img/blank.png" class="" height="280" alt="CSS">
-                    <h1 class="post-title">CSS</h1>
-                </div>
+                <!-- Tab-1-Content -->
 
                 <section class="section">
                     <div class="grid-cont">
                         <a class="grid-item">
                             <h4>After CSS4 does the CSS frameworks still make sense?</h4>
                             <p class="small-text my-0">2020.07.12</p>
-                            <h5>First of, we should airily refer to CSS4 that's because CSS4 never existed but with the addition of new features and grid capabilities to CSS3 Level 3 specifications we tend to call an upgraded CSS4...   </h5>
+                            <h5>First of, we should airily refer to CSS4 that's because CSS4 never existed but with
+                                the addition of new features and grid capabilities to CSS3 Level 3 specifications we
+                                tend to call an upgraded CSS4... </h5>
                         </a>
                         <a class="grid-item">
                             <h4>Confusing CSS properties with exmaples</h4>
                             <p class="small-text my-0">2020.07.12</p>
-                            <h5>With the intitial introduction of CSS3 in 1999 till 2018 there have been a lot of new features being added to the spec sheet <a href="https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/" target="_blank" title="CSS3 Specs Draft">read more here</a>...</h5>
+                            <h5>With the intitial introduction of CSS3 in 1999 till 2018 there have been a lot of
+                                new features being added to the spec sheet <a
+                                    href="https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/" target="_blank"
+                                    title="CSS3 Specs Draft">read more here</a>...</h5>
                         </a>
                         <a class="grid-item">
                             <h4>What is Neumorphism anyway?</h4>
                             <p class="small-text my-0">2020.07.12</p>
-                            <h5>Neumorphism is a relatively new design trend which hasgot lot of traction lately. It's aesthetic is marked by minimal and real-looking UI...</h5>
+                            <h5>Neumorphism is a relatively new design trend which hasgot lot of traction lately.
+                                It's aesthetic is marked by minimal and real-looking UI...</h5>
                         </a>
                         <a class="grid-item">
                             <h4>20 Useful online resources for UI &amp; Web Developers.</h4>
                             <p class="small-text my-0">2020.07.12</p>
-                            <h5>Why to reivent the wheel when you can make use of it. Here are 20 useful online resources that will save a lot of UI &amp; Web Developers's time.</h5>
+                            <h5>Why to reivent the wheel when you can make use of it. Here are 20 useful online
+                                resources that will save a lot of UI &amp; Web Developers's time.</h5>
                         </a>
                     </div>
                 </section>
@@ -93,29 +112,28 @@
         <!-- Tab-3 -->
         <ngb-tab title="HTML">
             <ng-template ngbTabContent>
-                 <!-- Tab-3-Content -->
-                 <div class="post-title-wrap">
-                    <div class="post-title__img-overlay gradient-html"></div> 
-                    <img src="../../assets/img/blank.png" class="" height="280" alt="HTML">
-                    <h1 class="post-title">HTML</h1>
-                </div>
+                <!-- Tab-3-Content -->
 
                 <section class="section">
                     <div class="grid-cont">
                         <a class="grid-item">
                             <h4>A Quick review of new HTML5 features.</h4>
                             <p class="small-text my-0">2020.07.12</p>
-                            <h5>The WWW hyperbole the evolution of HTML5 and that's absolutely true with the introduction of new features like Semantics, Offline Storage, Web Sockets, Device Access, Touch Events, Drag &amp; Drop, XMLHttpRequest level 2, ...</h5>
+                            <h5>The WWW hyperbole the evolution of HTML5 and that's absolutely true with the
+                                introduction of new features like Semantics, Offline Storage, Web Sockets, Device
+                                Access, Touch Events, Drag &amp; Drop, XMLHttpRequest level 2, ...</h5>
                         </a>
                         <a class="grid-item">
                             <h4>Most asked HTML5 interview Q&amp;A.</h4>
                             <p class="small-text my-0">2020.07.12</p>
-                            <h5>Googling HTML5 interview Q&amp;A will present you with tons and tons of pages but most of em' are coequal. Here's a fresh list from the lot...</h5>
+                            <h5>Googling HTML5 interview Q&amp;A will present you with tons and tons of pages but
+                                most of em' are coequal. Here's a fresh list from the lot...</h5>
                         </a>
                         <a class="grid-item">
                             <h4>What is Neumorphism anyway?</h4>
                             <p class="small-text my-0">2020.07.12</p>
-                            <h5>Neumorphism is a relatively new design trend which hasgot lot of traction lately. It's aesthetic is marked by minimal and real-looking UI...</h5>
+                            <h5>Neumorphism is a relatively new design trend which hasgot lot of traction lately.
+                                It's aesthetic is marked by minimal and real-looking UI...</h5>
                         </a>
                     </div>
                 </section>
@@ -126,29 +144,26 @@
         <!-- Tab-4 -->
         <ngb-tab title="Random">
             <ng-template ngbTabContent>
-                 <!-- Tab-4-Content -->
-                 <div class="post-title-wrap">
-                    <div class="post-title__img-overlay gradient-random"></div> 
-                    <img src="../../assets/img/blank.png" class="" height="280" alt="Random">
-                    <h1 class="post-title">Random</h1>
-                </div>
-
                 <section class="section">
                     <div class="grid-cont">
                         <a class="grid-item">
                             <h4>Are dreams Black &amp; White or Color?</h4>
                             <p class="small-text my-0">2020.07.12</p>
-                            <h5>Everyday most of us get dreams during or sleep, what ever might be the reason for dreams, have you every noticed if they are Black &amp; White or Color? Until recently I never gave a thought too but...</h5>
+                            <h5>Everyday most of us get dreams during or sleep, what ever might be the reason for
+                                dreams, have you every noticed if they are Black &amp; White or Color? Until
+                                recently I never gave a thought too but...</h5>
                         </a>
                         <a class="grid-item">
                             <h4>#BoycottChina - Good or Bad?</h4>
                             <p class="small-text my-0">2020.07.12</p>
-                            <h5>Currently the whole world is suffering from COVID-19 synonymously addressed as ChinaVirus is causing a havoc in both human survival and economically. </h5>
+                            <h5>Currently the whole world is suffering from COVID-19 synonymously addressed as
+                                ChinaVirus is causing a havoc in both human survival and economically. </h5>
                         </a>
                         <a class="grid-item">
                             <h4>My lockdown diaries.</h4>
                             <p class="small-text my-0">2020.07.12</p>
-                            <h5>Ever since Modiji announced lockdown on March 24th most part of India froze from daily activities, everybody suffered in some way or other.</h5>
+                            <h5>Ever since Modiji announced lockdown on March 24th most part of India froze from
+                                daily activities, everybody suffered in some way or other.</h5>
                         </a>
                     </div>
                 </section>
@@ -157,4 +172,7 @@
         </ngb-tab>
         <!-- /Tab-4 -->
     </ngb-tabset>
+</div>
+
+
 </div>
