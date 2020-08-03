@@ -13,66 +13,68 @@ margin: 3em 0;
     margin-bottom: 2em;
 }
 
-/* About Us Image Gallery Styles */
-.gallery-wrap {
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .gallery-box {
-    margin: 15px;
-    flex: 0 0 calc(20% - 30px);
-  }
-  
-  .gallery-box img, .pop_img img {
-    max-width: 100%;
-    min-width: 100%;
-  }
-  .pop_image_wrap {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content:  space-around;
-    align-items: center;
+
+/* Image Gal */
+ul#CSSGallery,
+ul#CSSGallery li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul#CSSGallery {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  height: 600px;
+  margin: 50px auto;
+}
+ul#CSSGallery li {
+  -webkit-box-flex: 1;
+          flex: 1;
+  -webkit-transition: -webkit-box-flex 500ms ease-out;
+  transition: -webkit-box-flex 500ms ease-out;
+  transition: flex 500ms ease-out;
+  transition: flex 500ms ease-out, -webkit-box-flex 500ms ease-out;
+  padding: 1px;
+  position: relative;
+  transform: perspective(400px) rotateY(45deg);
+  z-index: 8;
+}
+ul#CSSGallery li label {
+    position: absolute;
+    display: block;
+    top: 1em;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 0px solid #fff;
     opacity: 0;
-  }
-  .pop_img {
-    width: 70vw;
-    max-height: 80vh;
-    overflow: hidden;
-    border: 2px solid $color-black;
-  }
-  
-  .active {
-    animation: fadeIn 0.3s;
-    animation-fill-mode: forwards;
-  }
-  
-  .deactive {
-    animation: fadeOut 0.3s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
+    color: #ffffff !important;
+    left: 1em;
+    font-size: 0.8em;
+    /* transform: translate(50%); */
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.4);
+  color: $color-white;
+}
+ul#CSSGallery li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+ul#CSSGallery li:hover {
+  -webkit-box-flex: 85%;
+          flex: 85%;
+          transform: rotateY(0deg);
+          z-index: 80;
+}
+ul#CSSGallery li:hover label {
+  color: #265b80;
+  opacity: 1;
+  font-family: sans-serif;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
