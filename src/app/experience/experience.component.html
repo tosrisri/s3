@@ -11,10 +11,8 @@
 
 <div class="row">
     <div class="col">
-        <h2 class="page-title">experience</h2>
-        <h5 class="excerpt">With over 8 years of hands-on experience in the field of User Experience and User
-            Interface Design with involvement in all the phases of SDLC I've successfully delivered more than 10
-            exterprise level web applications from start to finish.</h5>
+        <h2 class="page-title">{{experience}}</h2>
+        <h5 class="excerpt">{{ExpExcert}}</h5>
     </div>
 </div>
 
@@ -26,12 +24,13 @@
     <!-- Year-wise Grid Table -->
 <div class="grid-table">
     <div order="1" class="thead">Year</div>
-    <div order="2"><h6>2020</h6></div>
-    <div order="3"><h6>2019</h6></div>
-    <div order="4"><h6>2018</h6></div>
-    <div order="5"><h6>2017</h6></div>
-    <div order="6"><h6>2016</h6></div>
-    <div order="7"><h6>2010</h6></div>
+    
+    <div order="2"><p>2020</p></div>
+    <div order="3"><p>2019</p></div>
+    <div order="4"><p>2018</p></div>
+    <div order="5"><p>2017</p></div>
+    <div order="6"><p>2016</p></div>
+    <div order="7"><p>2010</p></div>
 
     <div order="1" class="thead">Role/Designation</div>
     <div order="2"><p>Freelance UX &amp; UI Consultant</p></div>
@@ -47,55 +46,70 @@
         <a class="external" href="http://www.paraminfo.com/" title="ParamInfo" target="_blank">ParamInfo,</a>
         <a class="external" href="https://www.ziperase.com/" title="ZipErase" target="_blank">ZipErase</a> 
     </div>
-    <div order="3"><a href="https://www.neudesic.com/" title="Neudesic" target="_blank">Neudesic</a></div>
-    <div order="4"><a href="https://www.westagilelabs.com/" title="West Agile Labs" target="_blank">West Agile Labs</a></div>
-    <div order="5"><a href="https://corporate.comcast.com/" title="Neudesic" target="_blank">Comcast Communications</a></div>
-    <div order="6"><a href="https://www.wipro.com" title="baxter.com" target="_blank">Wipro Technologies</a></div>
-    <div order="7"><a href="https://www.impelsys.com" title="baxter.com" target="_blank">Impelsys India P Ltd.</a></div>
+    <div order="3"><a class="external" href="https://www.neudesic.com/" title="Neudesic" target="_blank">Neudesic</a></div>
+    <div order="4"><a class="external" href="https://www.westagilelabs.com/" title="West Agile Labs" target="_blank">West Agile Labs</a></div>
+    <div order="5"><a class="external" href="https://corporate.comcast.com/" title="Neudesic" target="_blank">Comcast Communications</a></div>
+    <div order="6"><a class="external" href="https://www.wipro.com" title="baxter.com" target="_blank">Wipro Technologies</a></div>
+    <div order="7"><a class="external" href="https://www.impelsys.com" title="baxter.com" target="_blank">Impelsys India P Ltd.</a></div>
   </div>
 <!-- /Year-wise Grid Table -->
 
-<h5 class="sub-title">Skillset</h5>
+<h5 class="sub-title">Disciplines</h5>
 <hr class="w-100" />
 <ul class="skillset">
+    <li>Animation</li>
+    <li>Branding</li>
+    <li>Concepting & Ideation</li>
+    <li>Creative Strategy</li>
     <li>End-to-end Product Design</li>
-    <li>UX/UI Design</li>
-    <li>Visual Design</li>
-    <li>User Research & Testing</li>
+    <li>Human Computer Interaction</li>
     <li>Interaction Design</li>
-    <li>Storyboarding</li>
-    <li>Wireframing</li>
-    <li>Task Flows</li>
+    <li>Mobile Design</li>
     <li>Prototyping</li>
     <li>Responsive Web Development</li>
-    <li>Animation</li>
+    <li>Storyboarding</li>
+    <li>Task Flows</li>
+    <li>User Experience</li>
+    <li>User Interaction</li>
+    <li>User Research & Testing</li>
+    <li>Web Design</li>
+    <li>Wireframing</li>
+
 </ul>
 
 <h5 class="sub-title">Tools &amp; Technologies</h5>
 <hr class="w-100" />
 <ul class="skillset">
+    <li>Adobe Photoshop</li>
+    <li>Adobe XD</li>
+    <li>Agile</li>
+    <li>Angular 6</li>
     <li>Balsamiq</li>
     <li>Figma</li>
-    <li>Adobe XD</li>
-    <li>Sketch</li>
-    <li>Invision</li>
-    <li>Zeplin</li>
-    <li>Adobe Photoshop</li>
-    <li>HTML5 &amp; CSS3</li>
-    <li>jQuery</li>
-    <li>JavaScript</li>
-    <li>Angular 6</li>
-    <li>Agile</li>
-    <li>JIRA</li>
-    <li>Rally</li>
     <li>GitHub</li>
+    <li>HTML5 & CSS3</li>
+    <li>Invision</li>
+    <li>JIRA</li>
+    <li>JavaScript</li>
+    <li>Rally</li>
+    <li>Sketch</li>
     <li>Web Accessiblity</li>
     <li>WordPress</li>
+    <li>Zeplin</li>
+    <li>jQuery</li>
 </ul>
 
 </div>
 
-
+<div class="row">
+    <ul>
+        <li *ngFor="let product of products; let i = index">
+            <div attr.order="{{i+1}}"><p>2020</p></div>
+            <p>{{product.name}} / ${{product.price}}</p>
+            <p> {{product.description}} </p>
+        </li>
+        </ul>
+</div>
 
 
     <div class="row">

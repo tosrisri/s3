@@ -35,9 +35,9 @@ ul#CSSGallery li {
   transition: -webkit-box-flex 500ms ease-out;
   transition: flex 500ms ease-out;
   transition: flex 500ms ease-out, -webkit-box-flex 500ms ease-out;
-  padding: 1px;
+  padding: 0px;
   position: relative;
-  transform: perspective(400px) rotateY(45deg);
+  transform: perspective(300px) rotateY(25deg);
   z-index: 8;
 }
 ul#CSSGallery li label {
@@ -62,8 +62,8 @@ ul#CSSGallery li img {
      object-fit: cover;
 }
 ul#CSSGallery li:hover {
-  -webkit-box-flex: 85%;
-          flex: 85%;
+  -webkit-box-flex: 75%;
+          flex: 75%;
           transform: rotateY(0deg);
           z-index: 80;
 }
@@ -78,3 +78,6 @@ ul#CSSGallery li:hover label {
   -webkit-transition-delay: 500ms;
           transition-delay: 500ms;
 }
+ul#CSSGallery li:hover img {
+    pointer-events: none;
+  }
