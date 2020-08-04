@@ -1,7 +1,7 @@
 <div class="row">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a [routerLink]="['/home']"  title="Home"><i class="fa fa-home"></i></a></li>
+            <li class="breadcrumb-item"><a [routerLink]="['/home']" title="Home"><i class="fa fa-home"></i></a></li>
             <li class="breadcrumb-item active" aria-current="page"><a href="#">Experience</a></li>
             <!-- <li class="breadcrumb-item"><a href="#">UX &amp; UI Design</a></li> -->
         </ol>
@@ -22,135 +22,88 @@
     <h5 class="sub-title">Work Experience</h5>
     <hr class="w-100" />
     <!-- Year-wise Grid Table -->
-<div class="grid-table">
-    <div order="1" class="thead">Year</div>
-    
-    <div order="2"><p>2020</p></div>
-    <div order="3"><p>2019</p></div>
-    <div order="4"><p>2018</p></div>
-    <div order="5"><p>2017</p></div>
-    <div order="6"><p>2016</p></div>
-    <div order="7"><p>2010</p></div>
+    <div class="grid-table">
+        <div order="1" class="thead">Year</div>
+        <div *ngFor="let company of companies; let i = index" attr.order="{{i+1}}">
+            <p>{{company.year}}</p>
+        </div>
+        <!-- <div order="2"><p>2020</p></div> -->
 
-    <div order="1" class="thead">Role/Designation</div>
-    <div order="2"><p>Freelance UX &amp; UI Consultant</p></div>
-    <div order="3"><p>Contract UX &amp; UI Consultant</p></div>
-    <div order="4"><p>Sr. Product Designer</p></div>
-    <div order="5"><p>UX &amp; UI Consultant</p></div>
-    <div order="6"><p>UX &amp; UI Architect</p></div>
-    <div order="7"><p>Web Developer</p></div>
+        <div order="1" class="thead">Role/Designation</div>
+        <div *ngFor="let company of companies; let i = index" attr.order="{{i+1}}">
+            <p>{{company.role}}</p>
+        </div>
 
-    <div order="1" class="thead">Company</div>
-    <div order="2">
-        <a class="external" href="http://www.amalcollege.in/" title="AMAL College" target="_blank">AMAL College,</a>
-        <a class="external" href="http://www.paraminfo.com/" title="ParamInfo" target="_blank">ParamInfo,</a>
-        <a class="external" href="https://www.ziperase.com/" title="ZipErase" target="_blank">ZipErase</a> 
+        <div order="1" class="thead">Company</div>
+        <div order="2">
+            <a class="external" href="http://www.amalcollege.in/" title="AMAL College" target="_blank">AMAL College,</a>
+            <a class="external" href="http://www.paraminfo.com/" title="ParamInfo" target="_blank">ParamInfo,</a>
+            <a class="external" href="https://www.ziperase.com/" title="ZipErase" target="_blank">ZipErase</a>
+        </div>
+        <div order="3"><a class="external" href="https://www.neudesic.com/" title="Neudesic" target="_blank">Neudesic</a></div>
+        <div order="4"><a class="external" href="https://www.westagilelabs.com/" title="West Agile Labs" target="_blank">West Agile Labs</a></div>
+        <div order="5"><a class="external" href="https://corporate.comcast.com/" title="Neudesic" target="_blank">Comcast Communications</a></div>
+        <div order="6"><a class="external" href="https://www.wipro.com" title="baxter.com" target="_blank">Wipro  Technologies</a></div>
+        <div order="7"><a class="external" href="https://www.impelsys.com" title="baxter.com" target="_blank">Impelsys India P Ltd.</a></div>
     </div>
-    <div order="3"><a class="external" href="https://www.neudesic.com/" title="Neudesic" target="_blank">Neudesic</a></div>
-    <div order="4"><a class="external" href="https://www.westagilelabs.com/" title="West Agile Labs" target="_blank">West Agile Labs</a></div>
-    <div order="5"><a class="external" href="https://corporate.comcast.com/" title="Neudesic" target="_blank">Comcast Communications</a></div>
-    <div order="6"><a class="external" href="https://www.wipro.com" title="baxter.com" target="_blank">Wipro Technologies</a></div>
-    <div order="7"><a class="external" href="https://www.impelsys.com" title="baxter.com" target="_blank">Impelsys India P Ltd.</a></div>
-  </div>
-<!-- /Year-wise Grid Table -->
+    <!-- /Year-wise Grid Table -->
 
-<h5 class="sub-title">Disciplines</h5>
-<hr class="w-100" />
-<ul class="skillset">
-    <li>Animation</li>
-    <li>Branding</li>
-    <li>Concepting & Ideation</li>
-    <li>Creative Strategy</li>
-    <li>End-to-end Product Design</li>
-    <li>Human Computer Interaction</li>
-    <li>Interaction Design</li>
-    <li>Mobile Design</li>
-    <li>Prototyping</li>
-    <li>Responsive Web Development</li>
-    <li>Storyboarding</li>
-    <li>Task Flows</li>
-    <li>User Experience</li>
-    <li>User Interaction</li>
-    <li>User Research & Testing</li>
-    <li>Web Design</li>
-    <li>Wireframing</li>
+    <h5 class="sub-title">Disciplines</h5>
+    <hr class="w-100" />
+    <ul class="skillset">
+        <li *ngFor="let discipline of disciplines">{{discipline}}</li>
+    </ul>
 
-</ul>
-
-<h5 class="sub-title">Tools &amp; Technologies</h5>
-<hr class="w-100" />
-<ul class="skillset">
-    <li>Adobe Photoshop</li>
-    <li>Adobe XD</li>
-    <li>Agile</li>
-    <li>Angular 6</li>
-    <li>Balsamiq</li>
-    <li>Figma</li>
-    <li>GitHub</li>
-    <li>HTML5 & CSS3</li>
-    <li>Invision</li>
-    <li>JIRA</li>
-    <li>JavaScript</li>
-    <li>Rally</li>
-    <li>Sketch</li>
-    <li>Web Accessiblity</li>
-    <li>WordPress</li>
-    <li>Zeplin</li>
-    <li>jQuery</li>
-</ul>
+    <h5 class="sub-title">Tools &amp; Technologies</h5>
+    <hr class="w-100" />
+    <ul class="skillset">
+        <li *ngFor="let tool of tools">{{tool}}</li>
+    </ul>
 
 </div>
+
+
+
 
 <div class="row">
-    <ul>
-        <li *ngFor="let product of products; let i = index">
-            <div attr.order="{{i+1}}"><p>2020</p></div>
-            <p>{{product.name}} / ${{product.price}}</p>
-            <p> {{product.description}} </p>
-        </li>
-        </ul>
-</div>
-
-
-    <div class="row">
-        <h5 class="sub-title">Clients I've worked for</h5>
-        <hr class="w-100" />
-        <div class="client-cont">
-            <div class="client-logo">
-                <a href="https://www.asda.com/" target="_blank"><img src="../../assets/img/asda.png" alt="ASDA.C0.UK"></a>
-            </div>
-            <div class="client-logo">
-                <a href="https://www.att.com/" target="_blank"><img src="../../assets/img/AT&T-01.svg" alt="AT&T"></a>
-            </div>
-            <div class="client-logo">
-                <a href="https://www.baxter.com/" target="_blank"><img src="../../assets/img/baxter.svg" alt="Baxter"></a>
-            </div>
-            <div class="client-logo">
-                <a href="https://corporate.comcast.com/" target="_blank"><img src="../../assets/img/comcast.svg"  alt="Comcast Communications"></a>
-            </div>
-            <div class="client-logo">
-                <a href="https://www.energyaustralia.com.au/" target="_blank"><img src="../../assets/img/ea.svg" alt="EnergyAustralia."></a>
-            </div>
-            <div class="client-logo">
-                <a href="https://www.hercrentals.com/" target="_blank"><img src="../../assets/img/hertz.svg" alt="Herz"></a>
-            </div>
-            <div class="client-logo">
-                <a href="https://www.kohls.com/" target="_blank"><img src="../../assets/img/kohls.svg" alt="KOHLS"></a>
-            </div>
-            <div class="client-logo">
-                <a href="https://www.microsoft.com/" target="_blank"><img src="../../assets/img/microsoft.svg" alt="Microsoft"></a>
-            </div>
-            <div class="client-logo">
-                <a href="https://www.shire.com/" target="_blank"><img src="../../assets/img/shire.svg" alt="Shire"></a>
-            </div>
-            <div class="client-logo">
-                <a href="https://www.walmart.com/" target="_blank"><img src="../../assets/img/walmart.svg" alt="Wal-Mart"></a>
-            </div>
-            <div class="client-logo">
-                <a href="https://www.wellsfargo.com/" target="_blank"><img src="../../assets/img/wellsfargo.svg" alt="WellsFargo" style="width: 60%; margin: 0 auto;"></a>
-            </div>
-            <div class="client-logo">
-                <a href="https://www.yvw.com.au/" target="_blank"><img src="../../assets/img/yvw.png" alt="Yerra Valley Waters"></a>
-            </div>
+    <h5 class="sub-title">Clients I've worked for</h5>
+    <hr class="w-100" />
+    <div class="client-cont">
+        <div class="client-logo">
+            <a href="https://www.asda.com/" target="_blank"><img src="../../assets/img/asda.png" alt="ASDA.C0.UK"></a>
+        </div>
+        <div class="client-logo">
+            <a href="https://www.att.com/" target="_blank"><img src="../../assets/img/AT&T-01.svg" alt="AT&T"></a>
+        </div>
+        <div class="client-logo">
+            <a href="https://www.baxter.com/" target="_blank"><img src="../../assets/img/baxter.svg" alt="Baxter"></a>
+        </div>
+        <div class="client-logo">
+            <a href="https://corporate.comcast.com/" target="_blank"><img src="../../assets/img/comcast.svg" alt="Comcast Communications"></a>
+        </div>
+        <div class="client-logo">
+            <a href="https://www.energyaustralia.com.au/" target="_blank"><img src="../../assets/img/ea.svg" alt="EnergyAustralia."></a>
+        </div>
+        <div class="client-logo">
+            <a href="https://www.hercrentals.com/" target="_blank"><img src="../../assets/img/hertz.svg" alt="Herz"></a>
+        </div>
+        <div class="client-logo">
+            <a href="https://www.kohls.com/" target="_blank"><img src="../../assets/img/kohls.svg" alt="KOHLS"></a>
+        </div>
+        <div class="client-logo">
+            <a href="https://www.microsoft.com/" target="_blank"><img src="../../assets/img/microsoft.svg" alt="Microsoft"></a>
+        </div>
+        <div class="client-logo">
+            <a href="https://www.shire.com/" target="_blank"><img src="../../assets/img/shire.svg" alt="Shire"></a>
+        </div>
+        <div class="client-logo">
+            <a href="https://www.walmart.com/" target="_blank"><img src="../../assets/img/walmart.svg" alt="Wal-Mart"></a>
+        </div>
+        <div class="client-logo">
+            <a href="https://www.wellsfargo.com/" target="_blank"><img src="../../assets/img/wellsfargo.svg" alt="WellsFargo" style="width: 60%; margin: 0 auto;"></a>
+        </div>
+        <div class="client-logo">
+            <a href="https://www.yvw.com.au/" target="_blank"><img src="../../assets/img/yvw.png" alt="Yerra Valley Waters"></a>
         </div>
     </div>
+</div>

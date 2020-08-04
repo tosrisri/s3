@@ -57,6 +57,18 @@
         })
       });
 
+
+      // Main NAV script
+      var navs = document.querySelectorAll(".nav-item");
+      var checkbox = document.querySelector(".checkbox-toggle");
+      navs.forEach(nav => {
+        nav.addEventListener("click", () => {
+            checkbox.checked = false;
+        })
+      });
+
+
+
       //Slider-Script 
       var $slider = $(".slider"), $bullets = $(".bullets");
 		function calculateHeight(){
@@ -132,6 +144,10 @@
       const orderNum = cell.getAttribute('order');
       (orderNum % 2 !== 0) && (cell.className = '--is-striped');
     });
+
+    
+    
+
   </script>
 </body>
 </html>
