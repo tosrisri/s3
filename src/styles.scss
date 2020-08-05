@@ -21,9 +21,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 10em; }
-h2 { font-size: 9em; }
-h3 { font-size: 6em; }
-h4 { font-size: 4em; }
+h2 { font-size: 7em; }
+h3 { font-size: 5em; }
+h4 { font-size: 3em; }
 h5 { font-size: 2em; }
 h6 { font-size: 1.1em; font-weight: 100; }
 
@@ -71,8 +71,9 @@ a.external::before {
   display: inline-block;
   background: url("../src/assets/img/external.svg") left center no-repeat;
   width: 16px;
-  height: 16px;
-  margin-right: 5px;
+  height: 11px;
+  margin-right: 0px;
+  background-size: 70%;
 }
 
 a.abtn {
@@ -228,27 +229,33 @@ h6.article-heading {
   margin-bottom: 8em;
   }
 #TabTutorials ul.nav-tabs {
-  border-bottom: none;
-  margin-bottom: 3em;
+  margin: 2em 0 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 #TabTutorials ul.nav-tabs li.nav-item {
   background-color: none;
+  border-radius: 0;
+  margin-right: 2em;
+}
+#TabTutorials ul.nav-tabs li.nav-item:last-child {
+  margin-right: 0;
 }
 #TabTutorials ul.nav-tabs li.nav-item a.nav-link {
   border: none;
-  padding: 0 0 0.4em;
-  margin-right: 3em;
-  border-radius: 0;
+    color: rgba($color-black, $alpha: 0.9);
+    border-radius: 0;
+    padding: 1em;
+    text-transform: uppercase;
 }
 #TabTutorials ul.nav-tabs li.nav-item a.nav-link:hover {
-  border: none;
+  color: $color-white;
+    background: rgba($color-black, $alpha: 0.6);
 }
 
 #TabTutorials ul.nav-tabs li.nav-item a.nav-link.active {
-  background-color: transparent;
-  border: none;
-  color: $color-grey80;
-  border-bottom: 2px solid $primary-color-black;
+  color: $color-white;
+    background: $color-black;
 }
 
 .blurred {
@@ -361,3 +368,33 @@ hr.spacer {
 }
 
 
+/* Page Progress Bar Styles */
+.progress-bar-container {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: fixed;
+  z-index: 10000000;
+  top: 0;
+  left: 0;
+}
+
+.progress-bar {
+  height: 2px;
+  background: #DE060C;
+  width: 0%;
+  z-index: 10000000;
+  box-shadow: 0 0 2px 0px #f00;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-rows:    minmax(100px, auto);
+grid-template-columns: 35% 50%;
+grid-gap: 5%;
+width: 100%;
+margin: 3em 0;
+}
+.gbox {
+  margin-bottom: 2em;
+}

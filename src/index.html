@@ -16,6 +16,7 @@
   <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="../src/assets/js/main.js"></script>
   <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -146,6 +147,17 @@
     });
 
     
+// Progress Bar Script
+window.onscroll = function () {
+    progressBar()
+};
+
+function progressBar() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("pBar").style.width = scrolled + "%";
+}
     
 
   </script>

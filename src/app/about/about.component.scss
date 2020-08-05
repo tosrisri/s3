@@ -1,17 +1,7 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
-.grid-box {
-    display: grid;
-    grid-template-rows:    minmax(100px, auto);
-grid-template-columns: 35% 50%;
-grid-gap: 5%;
-width: 100%;
-margin: 3em 0;
-}
-.gbox {
-    margin-bottom: 2em;
-}
+
 
 
 /* Image Gal */
@@ -81,3 +71,24 @@ ul#CSSGallery li:hover label {
 ul#CSSGallery li:hover img {
     pointer-events: none;
   }
+
+
+ ol.clearn {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ol.clearn li {
+    text-align: left;
+    width: calc(90%/3);
+  }
+  ol.clearn li a img, ol.clearn li a svg {
+    display: inline;
+    height: 26px;
+    width: auto;
+    vertical-align: middle;
+  }
+  ol.clearn li, ol.clearn a.external {
+    display: inline-block;
+    font-size: inherit;
+}

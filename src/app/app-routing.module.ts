@@ -9,6 +9,7 @@ import { PortfolioComponent } from "./portfolio/portfolio.component";
 import { ServicesComponent } from "./services/services.component";
 import { TutorialsComponent } from "./tutorials/tutorials.component";
 import { UxComponent } from "./tutorials/ux/ux.component";
+import { AsdaComponent } from "./portfolio/asda/asda.component";
 
 const routes: Routes = [
   { path: 'home', component: CarouselComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'services', component: ServicesComponent },
   { path: 'tutorials', component: TutorialsComponent },
   { path: 'tutorials/ux', component: UxComponent },
+  { path: 'portfolio/asda', component: AsdaComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
