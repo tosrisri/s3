@@ -606,13 +606,13 @@ hr.spacer {
   grid-gap: 2rem;
   padding: 2em 0;
 }
-.img-showcase div:first-child {
+.img-showcase > div:first-child {
   text-align: right;
   padding-right: 1em;
   border-right: 1px solid #ccc;
   height: fit-content;
 }
-.img-showcase1 div:last-child {
+.img-showcase1 > div:last-child {
   padding-left: 1em;
   border-left: 1px solid #ccc;
   height: fit-content;
