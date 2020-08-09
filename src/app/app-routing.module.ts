@@ -10,6 +10,7 @@ import { ServicesComponent } from "./services/services.component";
 import { TutorialsComponent } from "./tutorials/tutorials.component";
 import { UxComponent } from "./tutorials/ux/ux.component";
 import { AsdaComponent } from "./portfolio/asda/asda.component";
+import { AmalComponent } from './portfolio/amal/amal.component';
 
 const routes: Routes = [
   { path: 'home', component: CarouselComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'tutorials', component: TutorialsComponent },
   { path: 'tutorials/ux', component: UxComponent },
   { path: 'portfolio/asda', component: AsdaComponent },
+  { path: 'portfolio/amal', component: AmalComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

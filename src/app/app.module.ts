@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { UxComponent } from './tutorials/ux/ux.component';
 import { AsdaComponent } from './portfolio/asda/asda.component';
+import { AmalComponent } from './portfolio/amal/amal.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { AsdaComponent } from './portfolio/asda/asda.component';
     CarouselComponent,
     CountdownComponent,
     SitemapComponent, 
-    NgbdModalContent, TutorialsComponent, ServicesComponent, PortfolioComponent, ContactComponent, ExperienceComponent, FooterComponent, AboutComponent, UxComponent, AsdaComponent
+    NgbdModalContent, TutorialsComponent, ServicesComponent, PortfolioComponent, ContactComponent, ExperienceComponent, FooterComponent, AboutComponent, UxComponent, AsdaComponent, AmalComponent
   ],
   entryComponents: [NgbdModalContent],
   imports: [
