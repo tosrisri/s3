@@ -99,3 +99,23 @@ ul.filter-items .box h6 span {
         opacity:1;
     }
 }
+
+
+
+@media screen and (max-width:600px) {
+    ul.filter-items > li {
+        display: block;
+    }
+    ul.filter-items > li {
+        margin: 5em 0;
+    }
+    
+    .box-item:first-child {
+        flex-basis: 100%;
+        margin-bottom: 2em;
+    }
+    .box-item:nth-child(2) {
+        flex-basis: 100%;
+    }
+
+}

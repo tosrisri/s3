@@ -104,11 +104,11 @@ flex-basis: 25%;
 @media screen and (max-width:600px) {
 	.client-cont {
 		margin: 0;
-		padding: 1em;
+		padding: 0em;
 	}
 	
 	.client-logo {
-		width: 98%;
+		width: 100%;
 		height: calc(100vw/4);
 		border: 1px dotted #d1d1d1;
 		margin-bottom: 1em;
@@ -121,5 +121,8 @@ flex-basis: 25%;
 		object-fit: contain;
 		max-width: 200px;
 		margin: 0 auto;
+	}
+	.client-logo img[alt="WellsFargo"] {
+		width: 50% !important;
 	}
 }

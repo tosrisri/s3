@@ -752,7 +752,17 @@ hr.spacer {
 
 /* MEDIA QUERRIES */
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
+@media (max-width: 600px) { 
+  .menulink a.nav-link[title="Srini"] {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+  p {
+    font-size: 0.9em;
+  }
+  h1, h2, h3, h4, h5, h6, p, li, div {
+    color: #555;
+  }
   /* homepage */
   .carousel-item h2 {
     font-size: 3em;
@@ -825,16 +835,27 @@ ul.skillset li {
   flex-basis: 50% !important;
 }
 #Wexp .client-cont {
-  border: 1px solid red;
+  border: 0px solid red;
   width: 100%;
 }
 #Wexp .client-cont .client-logo {
- border: 1px solid blue;
+ border: 0px solid blue;
  }
  h5.sub-title {
-   padding: 0 15px;
+   padding: 0;
    border-bottom: 0;
  }
+ #Wexp .grid-table {
+  grid-template-columns: 70px 1fr 1fr;
+ }
+#Wexp .grid-table > div {
+  padding: 10px 5px;
+  
+}
+#Wexp .grid-table div.thead {
+  font-weight: normal;
+  text-transform: initial;
+}
 
 }
 // Small devices (landscape phones, less than 768px)
