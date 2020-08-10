@@ -1,0 +1,21 @@
+section {
+    margin: 2em 0;
+}
+.olist {
+    list-style: decimal;
+    list-style-position: inside;
+}
+.columns {
+    width: 100%; 
+    display: grid;
+    /* Define Auto Row size */
+    grid-auto-rows: auto; 
+    /*Define our columns */
+    grid-template-columns: repeat(3,minmax(auto, 1fr)); 
+    grid-gap: 1em;
+    margin: 1em 0;
+  }
+  
+  .column {
+    border:0px solid red;
+  }
