@@ -5,8 +5,8 @@
 body {
   background-color: $color-grey20;
   font-size: 18px;
-  font-weight: $fw-thin;
-  color: rgba($color-black, $alpha: 0.5);
+  font-weight: 200;
+  color: rgba($color-black, $alpha: 0.7);
   line-height: 1.618em;
   padding-top: 60px;
   font-smooth: auto;
@@ -15,8 +15,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: rgba($color-black, $alpha: 0.7);
-  font-weight: $fw-thin;
+  color: rgba($color-black, $alpha: 0.8);
+  font-weight: $fw-300;
   line-height: 1.618em;
 }
 
@@ -25,7 +25,7 @@ h2 { font-size: 7em; }
 h3 { font-size: 5em; }
 h4 { font-size: 3em; }
 h5 { font-size: 2em; }
-h6 { font-size: 1.1em; font-weight: 100; }
+h6 { font-size: 1.1em; }
 
 .carousel-item h2, .carousel-item h3, .carousel-item h4, .carousel-item h5, .carousel-item h6 {
   color: $primary-color-black;
@@ -56,7 +56,12 @@ a, .btn, div, .abtn, p {
   outline: none;
 }
 a {
+  color: $color-link;
+  font-weight: 200;
+}
+a:hover {
   color: $color-black;
+  transition: ease-in-out 1s;
 }
 a, a:hover {
   text-decoration: none;
@@ -77,8 +82,8 @@ a.external::before {
 }
 
 a.abtn {
-  color: $color-black;
-  border: 1px solid $color-black;
+  color: $color-link;
+  border: 1px solid $color-link;
   padding: 0.8em 2em;
   font-weight: 300;
   font-size: 0.9em;
@@ -111,7 +116,7 @@ a.abtn:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: $color-black;
+  background: $color-link;
   border-radius: 100%;
   -webkit-transform: scale(0,1);
   transform: scale(0,1);
@@ -147,6 +152,7 @@ background-image: linear-gradient(to bottom, #dedede 25%, transparent 80%);
   text-transform: capitalize;
   text-align: center;
   font-weight: $fw-thick;
+  -webkit-text-stroke: 1px rgba($color-black, $alpha: 0.1);
 }
 h5.sub-title {
   width: 100%;
@@ -404,7 +410,7 @@ hr.spacer {
 
 /* make carousel indictors black */
 .carousel-indicators li {
-  background-color: $color-black;
+  background-color: $color-link;
 }
 
 
@@ -412,7 +418,7 @@ hr.spacer {
 .progress-bar-container {
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: $color-white;
   position: fixed;
   z-index: 10000000;
   top: 0;
@@ -421,10 +427,10 @@ hr.spacer {
 
 .progress-bar {
   height: 2px;
-  background: #DE060C;
+  background: $color-link;
   width: 0%;
   z-index: 10000000;
-  box-shadow: 0 0 2px 0px #f00;
+  box-shadow: 0 0 2px 0px $color-link;
 }
 
 .grid-box {
@@ -777,13 +783,7 @@ hr.spacer {
     height: 160vw !important;
     border-radius: 50% !important;
   }
-  .outer-menu .menu > div > div > ul > li {
-  margin-bottom: 1.5em !important;
-  font-size: 1.3em !important;
-  }
-  .outer-menu .menu > div > div > ul > li a {
-    font-weight: 300;
-  }
+
   #Footer * {
     text-align: center;
   }

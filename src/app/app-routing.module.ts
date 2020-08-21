@@ -12,6 +12,7 @@ import { UxComponent } from "./tutorials/ux/ux.component";
 import { AsdaComponent } from "./portfolio/asda/asda.component";
 import { AmalComponent } from './portfolio/amal/amal.component';
 import { ZemosoComponent } from './portfolio/zemoso/zemoso.component';
+import { ParaminfoComponent } from './portfolio/paraminfo/paraminfo.component';
 
 const routes: Routes = [
   { path: 'home', component: CarouselComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'portfolio/asda', component: AsdaComponent },
   { path: 'portfolio/amal', component: AmalComponent },
   { path: 'portfolio/zemoso', component: ZemosoComponent },
+  { path: 'portfolio/pi', component: ParaminfoComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

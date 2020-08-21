@@ -20,11 +20,11 @@
 }
 
 #Footer p, #Footer h5 {
-  color: $color-grey70 !important;
+  color: #999 !important;
 }
 #Footer a {
-  color: rgba($primary-color-white, $alpha: 0.5);
-  font-weight: lighter;
+  color: crimson;
+  font-weight: 300;
   font-size: 0.9em;
 }
 #Footer a:hover {

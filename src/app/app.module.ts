@@ -19,6 +19,7 @@ import { UxComponent } from './tutorials/ux/ux.component';
 import { AsdaComponent } from './portfolio/asda/asda.component';
 import { AmalComponent } from './portfolio/amal/amal.component';
 import { ZemosoComponent } from './portfolio/zemoso/zemoso.component';
+import { ParaminfoComponent } from './portfolio/paraminfo/paraminfo.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { ZemosoComponent } from './portfolio/zemoso/zemoso.component';
     CarouselComponent,
     CountdownComponent,
     SitemapComponent, 
-    NgbdModalContent, TutorialsComponent, ServicesComponent, PortfolioComponent, ContactComponent, ExperienceComponent, FooterComponent, AboutComponent, UxComponent, AsdaComponent, AmalComponent, ZemosoComponent
+    NgbdModalContent, TutorialsComponent, ServicesComponent, PortfolioComponent, ContactComponent, ExperienceComponent, FooterComponent, AboutComponent, UxComponent, AsdaComponent, AmalComponent, ZemosoComponent, ParaminfoComponent
   ],
   entryComponents: [NgbdModalContent],
   imports: [

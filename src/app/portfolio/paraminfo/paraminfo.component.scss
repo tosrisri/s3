@@ -1,0 +1,29 @@
+#slideshow #slideshowWindow {
+	width:1000px;
+	height:650px;
+	margin:0 auto;
+	padding:0;
+	position:center;
+    overflow:hidden;
+    border: 1px solid #ddd;
+}
+
+#slideshow #slideshowWindow .slide {
+  margin:0;
+	padding:0;
+	width:1000px; 
+	height:650px;
+    float:left;
+}
+
+#slideshow h5 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+#slideshow #slideshowWindow .slide img {
+    width: 1000px;
+    height: auto;
+    object-fit: contain;
+    vertical-align: top;
+}

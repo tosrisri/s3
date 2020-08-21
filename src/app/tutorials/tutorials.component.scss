@@ -79,3 +79,15 @@ a.grid-item span.readit {
 a.grid-item:hover span.readit {
   display: block;
 }
+
+#ArticleCont .grid-cont a.grid-item {
+
+}
+#ArticleCont:hover .grid-cont a {
+  filter: blur(6px);
+  opacity: 0.5;
+}
+#ArticleCont:hover .grid-cont a:hover {
+  filter: blur(0);
+  opacity: 1;
+}

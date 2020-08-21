@@ -1,5 +1,28 @@
 h4 {
-    font-weight: 150;
-    line-height: 1.6;
+    // font-weight: 150;
+    // line-height: 1.6;
     margin: 1em 0 1em;
+}
+ul.ixd-list {
+    list-style-position: inside;
+}
+.fig-n-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fig-n-text figure {
+    text-align: center;
+    margin-left: 2em;
+}
+.fig-n-text figure img {
+    max-height: 350px;
+}
+.fig-n-text figure figcaption {
+    text-align: center;
+    display: block;
+    font-size: 12px;
+}
+.fig-n-text figure, .fig-n-text p {
+    flex-basis: 100%;
 }

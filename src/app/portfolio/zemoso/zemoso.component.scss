@@ -12,10 +12,15 @@ section {
     grid-auto-rows: auto; 
     /*Define our columns */
     grid-template-columns: repeat(3,minmax(auto, 1fr)); 
-    grid-gap: 1em;
-    margin: 1em 0;
+    grid-gap: 6em;
+    margin: 3em 0;
   }
-  
+  .columns img, .is-item img {
+    border: 0.01em solid #ccc;
+  }
   .column {
     border:0px solid red;
+  }
+  .column a img {
+    max-width: 100%;
   }
