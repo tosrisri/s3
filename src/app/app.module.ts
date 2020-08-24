@@ -20,6 +20,7 @@ import { AsdaComponent } from './portfolio/asda/asda.component';
 import { AmalComponent } from './portfolio/amal/amal.component';
 import { ZemosoComponent } from './portfolio/zemoso/zemoso.component';
 import { ParaminfoComponent } from './portfolio/paraminfo/paraminfo.component';
+import { CssPropertiesComponent } from './tutorials/css-properties/css-properties.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { ParaminfoComponent } from './portfolio/paraminfo/paraminfo.component';
     CarouselComponent,
     CountdownComponent,
     SitemapComponent, 
-    NgbdModalContent, TutorialsComponent, ServicesComponent, PortfolioComponent, ContactComponent, ExperienceComponent, FooterComponent, AboutComponent, UxComponent, AsdaComponent, AmalComponent, ZemosoComponent, ParaminfoComponent
+    NgbdModalContent, TutorialsComponent, ServicesComponent, PortfolioComponent, ContactComponent, ExperienceComponent, FooterComponent, AboutComponent, UxComponent, AsdaComponent, AmalComponent, ZemosoComponent, ParaminfoComponent, CssPropertiesComponent
   ],
   entryComponents: [NgbdModalContent],
   imports: [

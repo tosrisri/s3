@@ -13,6 +13,7 @@ import { AsdaComponent } from "./portfolio/asda/asda.component";
 import { AmalComponent } from './portfolio/amal/amal.component';
 import { ZemosoComponent } from './portfolio/zemoso/zemoso.component';
 import { ParaminfoComponent } from './portfolio/paraminfo/paraminfo.component';
+import { CssPropertiesComponent } from "./tutorials/css-properties/css-properties.component";
 
 const routes: Routes = [
   { path: 'home', component: CarouselComponent },
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'portfolio/amal', component: AmalComponent },
   { path: 'portfolio/zemoso', component: ZemosoComponent },
   { path: 'portfolio/pi', component: ParaminfoComponent },
+  { path: 'portfolio/CssProperties', component: CssPropertiesComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
